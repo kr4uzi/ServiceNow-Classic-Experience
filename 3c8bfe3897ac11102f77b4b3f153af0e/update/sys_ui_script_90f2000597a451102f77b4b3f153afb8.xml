@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.UIPolicyButtonActionHandler</name>
+        <script><![CDATA[/* eslint no-undef: "error" */
+function UIPolicyButtonActionHandler(uiPolicy, execType, $window) {
+	$window = $window || this;
+	
+	if (!$window.x_376096_cxp_ui_policy_cache_styles) {
+		var styles = $window.x_376096_cxp_ui_policy_cache_styles = $window.document.createElement('style');
+		// https://stackoverflow.com/a/35011775
+		styles.innerText = '.cxp-disabled,'
+			+ '.cxp-disabled[disabled] {'
+			+ '  opacity: .4;'
+			+ '  cursor: default !important;'
+			+ '  pointer-events: none;'
+			+ '}';
+		$window.document.head.appendChild(styles);
+	}
+	
+	var cache = $window.x_376096_cxp_ui_policy_cache || ($window.x_376096_cxp_ui_policy_cache = {});
+	if (!(uiPolicy in cache)) {
+		var ga = new $window.GlideAjax('UIPolicyHelper').setScope('x_376096_cxp');
+		ga.addParam('sysparm_name', 'getButtonActions');
+		ga.addParam('ui_policy', uiPolicy);
+		ga.getXMLAnswer(function (result) {
+			cache[uiPolicy] = JSON.parse(result);
+			UIPolicyButtonActionHandler(uiPolicy, execType, $window);
+		});
+		
+		return;
+	}
+	
+	cache[uiPolicy].forEach(function (action) {
+		var btns = Array.prototype.slice.call(
+			$window.document.querySelectorAll('button[gsft_id="' + action.button + '"]')
+		);		
+		
+		btns.forEach(function (btn) {
+			if (action.visible != 'ignore') {
+				btn.style.display = action.visible == String(execType) ? '' : 'none';
+			}
+			
+			if (action.disable != 'ignore') {
+				btn.disabled = action.disable == String(execType);
+			}
+		});
+		
+		var relLinks = Array.prototype.slice.call(
+			$window.document.querySelectorAll('a[gsft_id="' + action.button + '"]')
+		);
+		
+		relLinks.forEach(function (relLink) {
+			if (action.visible != 'ignore') {
+				relLink.style.display = action.visible == String(execType) ? '' : 'none';
+			}
+			
+			if (action.disable != 'ignore') {
+				relLink.classList[action.disable == String(execType) ? 'add' : 'remove']('cxp-disabled');
+			}
+		});
+	});
+}
+]]></script>
+        <script_name>UIPolicyButtonActionHandler</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 15:20:14</sys_created_on>
+        <sys_id>90f2000597a451102f77b4b3f153afb8</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>x_376096_cxp.UIPolicyButtonActionHandler</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_90f2000597a451102f77b4b3f153afb8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-05 20:52:13</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

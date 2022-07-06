@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <snapshot/>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 10:18:09</sys_created_on>
+        <sys_id>5f72085d97e491102f77b4b3f153af65</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_atf_step_5f72085d97e491102f77b4b3f153af65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 12:45:58</sys_updated_on>
+        <table/>
+        <test display_value="CXP: UI Policies">e751409d97e491102f77b4b3f153af3b</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=5f72085d97e491102f77b4b3f153af65"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>5f72085d97e491102f77b4b3f153af65</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 10:18:10</sys_created_on>
+        <sys_id>4c3908dd97e491102f77b4b3f153afbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 10:18:10</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>5f72085d97e491102f77b4b3f153af65</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 10:18:10</sys_created_on>
+        <sys_id>c43908dd97e491102f77b4b3f153afbf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 12:45:59</sys_updated_on>
+        <value>/* global stepResult, x_376096_cxp, GlideRecord, gs */&#13;
+/* eslint no-undef: "error" */&#13;
+(function(stepResult) {&#13;
+&#13;
+	var uiPolicyGr = new GlideRecord('sys_ui_policy');&#13;
+	uiPolicyGr.addJoinQuery('x_376096_cxp_ui_policy_button_action', 'sys_id', 'ui_policy');&#13;
+	uiPolicyGr.query();&#13;
+	&#13;
+	var ignoredUIPolicies = [];&#13;
+	var invalidUIPolicies = [];&#13;
+	var validUIPolicies = [];&#13;
+	var util = new x_376096_cxp.UIPolicyHelper();&#13;
+	while (uiPolicyGr.next()) {&#13;
+		var sysId = uiPolicyGr.getUniqueValue();&#13;
+		var skipButtonLookup = true;&#13;
+		var testResult = util.testUIPolicy(uiPolicyGr, skipButtonLookup);&#13;
+		if (testResult == 'valid') {&#13;
+			validUIPolicies.push(sysId);&#13;
+		} else if (testResult == 'ignored') {&#13;
+			ignoredUIPolicies.push(sysId);&#13;
+		} else if (testResult == 'invalid') {&#13;
+			invalidUIPolicies.push(sysId);&#13;
+		}&#13;
+	}&#13;
+	&#13;
+	var totalCount = ignoredUIPolicies.length + invalidUIPolicies.length + validUIPolicies.length;&#13;
+	var output = 'Total number of tested UI Policies: ' + totalCount;&#13;
+	&#13;
+	if (totalCount) {&#13;
+		output += '\nOnly UI Policies with a "UI Policy Button Action" will be tested.'&#13;
+			+ '\nPutting "// cxp-ignore-atf" in one of the "Execute if {false|true}" script will ignore testing for this UI Policy.';&#13;
+		&#13;
+		output += '\n'&#13;
+			+ '\n# ignored: ' + ignoredUIPolicies.length&#13;
+			+ '\n# valid  : ' + validUIPolicies.length&#13;
+			+ '\n# invalid: ' + invalidUIPolicies.length;&#13;
+		&#13;
+		if (invalidUIPolicies.length) {&#13;
+			output += '\n\nPlease open the following UI Policies and configure them as described in the on-screen messages:\n'&#13;
+				+ gs.getProperty('glide.servlet.uri') + 'nav_to.do?uri=%2Fsys_ui_policy_list.do%3Fsysparm_query%3Dsys_idIN' + invalidUIPolicies.join('%252C') + '%26sysparm_view%3Dadvanced' + '\n';&#13;
+		}&#13;
+	}&#13;
+	&#13;
+	stepResult.setOutputMessage(output);&#13;
+	return totalCount == 0 || invalidUIPolicies.length == 0;&#13;
+&#13;
+})(stepResult);&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>
