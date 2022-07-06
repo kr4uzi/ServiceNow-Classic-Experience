@@ -13,7 +13,7 @@ var UIPolicyHelper = Class.create();
 UIPolicyHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
 	generateUIPolicyMessage: function (uiPolicyGr) {
-		return "In order for <strong>UI Policy Button Actions</strong> to work, the following adjustments have to be made to the UI Policy:<br />"
+		return "In order for <strong>UI Policy Button Actions</strong> to work, the following adjustments have to be made to the UI Policy (<a href='sys_ui_policy.do?sys_id=" + uiPolicyGr.sys_id + "&sysparm_view=advanced&sysparm_view_forced=true'>Advanced View</a>):<br />"
 			+ "<strong>Run scripts:</strong> true<br />"
 			+ "<strong>Run scripts in UI type:</strong> All<br />"
 			+ "<strong>Execute if true:<br /></strong></p>"
@@ -101,13 +101,13 @@ UIPolicyHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-05 16:01:42</sys_created_on>
         <sys_id>c73d080197e451102f77b4b3f153af7e</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>UIPolicyHelper</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_script_include_c73d080197e451102f77b4b3f153af7e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 12:34:48</sys_updated_on>
+        <sys_updated_on>2022-07-06 18:19:51</sys_updated_on>
     </sys_script_include>
 </record_update>

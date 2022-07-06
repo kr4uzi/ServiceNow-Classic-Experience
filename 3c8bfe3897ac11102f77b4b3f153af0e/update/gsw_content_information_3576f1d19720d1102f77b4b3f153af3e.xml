@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article/>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>slushbucket.do?sysparm_form=related_list&amp;sysparm_list=sys_ui_policy&amp;sysparm_view=advanced</end_point>
+        <end_point_open_mode>2</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>200</order>
+        <parent display_value="Configure UI Policy">d6a9a95597ec91102f77b4b3f153af62</parent>
+        <parents>d6a9a95597ec91102f77b4b3f153af62,3b79655597ec91102f77b4b3f153afb9</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="CXP Guided Setup">3b79655597ec91102f77b4b3f153afb9</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 18:15:37</sys_created_on>
+        <sys_id>3576f1d19720d1102f77b4b3f153af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Configure Advanced View</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>gsw_content_information_3576f1d19720d1102f77b4b3f153af3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 18:15:37</sys_updated_on>
+        <table/>
+        <title>Configure Advanced View</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=3576f1d19720d1102f77b4b3f153af3e"/>
+</record_update>
