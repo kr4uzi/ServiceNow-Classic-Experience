@@ -14,14 +14,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 10:18:09</sys_created_on>
         <sys_id>5f72085d97e491102f77b4b3f153af65</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Run Server Side Script</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_atf_step_5f72085d97e491102f77b4b3f153af65</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 12:45:58</sys_updated_on>
+        <sys_updated_on>2022-07-08 20:50:58</sys_updated_on>
         <table/>
         <test display_value="CXP: UI Policies">e751409d97e491102f77b4b3f153af3b</test>
         <timeout/>
@@ -50,9 +50,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 10:18:10</sys_created_on>
         <sys_id>c43908dd97e491102f77b4b3f153afbf</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 12:45:59</sys_updated_on>
+        <sys_updated_on>2022-07-08 20:50:58</sys_updated_on>
         <value>/* global stepResult, x_376096_cxp, GlideRecord, gs */&#13;
 /* eslint no-undef: "error" */&#13;
 (function(stepResult) {&#13;
@@ -83,7 +83,7 @@
 	&#13;
 	if (totalCount) {&#13;
 		output += '\nOnly UI Policies with a "UI Policy Button Action" will be tested.'&#13;
-			+ '\nPutting "// cxp-ignore-atf" in one of the "Execute if {false|true}" script will ignore testing for this UI Policy.';&#13;
+			+ '\nPutting "' + util.ignore_validation_string + '" in one of the "Execute if {false|true}" script will exclude the UI Policy from being validated.';&#13;
 		&#13;
 		output += '\n'&#13;
 			+ '\n# ignored: ' + ignoredUIPolicies.length&#13;

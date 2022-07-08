@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sp_dependency display_value="CXP UI Action Styles">71f273f997e851102f77b4b3f153aff1</sp_dependency>
+        <sp_js_include display_value="CXP UI Action Styles">7803b3f997e851102f77b4b3f153aff0</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-08 16:36:59</sys_created_on>
+        <sys_id>601373f997e851102f77b4b3f153afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CXP UI Action Styles.CXP UI Action Styles</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_601373f997e851102f77b4b3f153afc8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-08 16:36:59</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+</record_update>

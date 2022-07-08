@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>true</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.classic_css_inject</name>
+        <script><![CDATA[var x_376096_cxp = x_376096_cxp || {};
+
+x_376096_cxp.classic_css_inject = (function() {
+	"use strict";
+	
+	if (x_376096_cxp.classic_css_inject) {
+		return x_376096_cxp.classic_css_inject;
+	}
+	
+	setTimeout(function () {
+		var $window = this;
+		var ga = new $window.GlideAjax('StyleHelper').setScope('x_376096_cxp');
+		ga.addParam('sysparm_name', 'loadClassicUIStyles');
+		ga.getXMLAnswer(function (result) {
+			JSON.parse(result).forEach(function (style) {
+				var styleElement = $window.document.createElement('style');
+				styleElement.textContent = style.css;
+				styleElement.dataset.name = style.name;
+				$window.document.head.appendChild(styleElement);
+			});
+		});
+	});
+
+	return {
+		type:  "classic_css_inject"
+	};
+})();
+]]></script>
+        <script_name>classic_css_inject</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-08 07:37:07</sys_created_on>
+        <sys_id>217e6df197a051102f77b4b3f153af9a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>x_376096_cxp.classic_css_inject</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_217e6df197a051102f77b4b3f153af9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-08 17:21:18</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>
