@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-07-07 19:17:46</sys_updated_on>
         <table>x_376096_cxp_ui_action_style</table>
-        <ui_policy display_value="Default">5c8dcfe197e411102f77b4b3f153afff</ui_policy>
+        <ui_policy display_value="CXP UI Action Style - Default">5c8dcfe197e411102f77b4b3f153afff</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

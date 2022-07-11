@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-07-08 07:32:49</sys_updated_on>
         <table>x_376096_cxp_style_sheet</table>
-        <ui_policy display_value="Default">2c7671bd97a051102f77b4b3f153af46</ui_policy>
+        <ui_policy display_value="CXP Style Sheet - Default">2c7671bd97a051102f77b4b3f153af46</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

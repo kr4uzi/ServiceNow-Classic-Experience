@@ -7,7 +7,7 @@
         <dependent_on_contents/>
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
-        <description><![CDATA[<p>In order for <em>dynamic</em> UI Action <strong>Visible</strong> and <strong>Disable</strong> states, please add <strong>UI Button Action</strong> related list to the <em>UI Policy</em> form.</p>
+        <description><![CDATA[<p>In order to configure <em>dynamic</em> UI Action <strong>Visible</strong> and <strong>Disable</strong> states, please add <strong>UI Button Action</strong> related list to the <em>UI Policy</em> form.</p>
 <p><img src="/sys_attachment.do?sys_id&#61;0a83521597a0d1102f77b4b3f153aff5" width="667" /></p>]]></description>
         <display_child_max_num/>
         <done_status_text/>
@@ -29,15 +29,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 17:37:18</sys_created_on>
         <sys_id>d6a9a95597ec91102f77b4b3f153af62</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Configure UI Policy</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Enable UI Action disabling (UI Policy based)</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>gsw_content_group_d6a9a95597ec91102f77b4b3f153af62</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 20:22:55</sys_updated_on>
-        <title>Configure UI Policy</title>
+        <sys_updated_on>2022-07-09 12:01:47</sys_updated_on>
+        <title>Enable UI Action disabling (UI Policy based)</title>
         <weight>1</weight>
     </gsw_content_group>
     <sys_translated_text action="delete_multiple" query="documentkey=d6a9a95597ec91102f77b4b3f153af62"/>
