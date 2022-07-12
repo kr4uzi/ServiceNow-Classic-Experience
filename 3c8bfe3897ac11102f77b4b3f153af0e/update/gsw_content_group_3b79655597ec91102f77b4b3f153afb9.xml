@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_group">
     <gsw_content_group action="INSERT_OR_UPDATE">
         <active>true</active>
-        <checksum>sQlQvV/XIljytTEHIZwW8pYJqpA=</checksum>
+        <checksum>Hz8vnfkVbkjqwTIASbb9MQKYcDs=</checksum>
         <child_can_have_roles>false</child_can_have_roles>
         <children_layout>0</children_layout>
         <dependent_on_contents/>
@@ -33,14 +33,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 17:19:21</sys_created_on>
         <sys_id>3b79655597ec91102f77b4b3f153afb9</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Classic Experience Guided Setup</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>gsw_content_group_3b79655597ec91102f77b4b3f153afb9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-11 17:37:12</sys_updated_on>
+        <sys_updated_on>2022-07-12 05:45:29</sys_updated_on>
         <title>Classic Experience Guided Setup</title>
         <weight>1</weight>
     </gsw_content_group>
