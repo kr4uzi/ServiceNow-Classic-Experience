@@ -6,7 +6,7 @@
         <action_target_ref display_value="sys_ui_policy.ui_type">dc634b7697a011102f77b4b3f153af80</action_target_ref>
         <active>true</active>
         <content><![CDATA[Set the &#39;Run scripts in UI type&#39; field to &#39;All&#39;.]]></content>
-        <guide display_value="UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
         <implicit>false</implicit>
         <link/>
         <name/>

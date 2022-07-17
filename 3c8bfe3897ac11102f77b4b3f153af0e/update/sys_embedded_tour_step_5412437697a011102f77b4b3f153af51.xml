@@ -6,7 +6,7 @@
         <action_target_ref display_value="div[id=&quot;cb7245bcd7031100b9a5c7400e6103f1">90128b7297a011102f77b4b3f153afa6</action_target_ref>
         <active>true</active>
         <content><![CDATA[<p>Set Conditions to:<br />[State] [is] [Resolved] (AND) <br />[Resolution code] [is] [-- None --] (OR)<br />  [Resolution notes] [is empty]</p>]]></content>
-        <guide display_value="UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
         <implicit>false</implicit>
         <link/>
         <name/>

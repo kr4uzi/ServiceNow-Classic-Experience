@@ -7,7 +7,7 @@
         <hint/>
         <name/>
         <order>100</order>
-        <roles>x_376096_cxp.ui_policy_button_action_user,x_376096_cxp.style_sheet_user,x_376096_cxp.ui_action_style_user</roles>
+        <roles>x_376096_cxp.ui_policy_button_action_user,x_376096_cxp.ui_action_style_user</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 09:43:30</sys_created_on>

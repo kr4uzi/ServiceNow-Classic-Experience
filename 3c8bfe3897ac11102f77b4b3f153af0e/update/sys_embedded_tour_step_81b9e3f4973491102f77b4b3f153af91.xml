@@ -5,8 +5,10 @@
         <action_target/>
         <action_target_ref/>
         <active>true</active>
-        <content><![CDATA[You have configured a UI Policy that sets a Button to disabled if the UI Policy Condition matches. A pre-generated script has to be added to the UI Policy&#39;s Script section in order for this feature to work. This feature works both on the Classic UI as well as the Service Portal.]]></content>
-        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <content><![CDATA[<p><strong>Congratulations</strong>, you have successfully created a CSS Style Sheet that is loaded in the Classic UI.</p>
+<p><strong>Note:</strong> Only Style Sheets created from the &#39;Classic Experience&#39; &gt; &#39;Style Sheets / CSS&#39; will be loaded in the Classic UI.</p>
+<p>If you want to <strong>deactivate</strong> a style sheet, please personalize the List view and add the &#39;Use in Classic UI&#39; column to be able to untoggle the checkbox.</p>]]></content>
+        <guide display_value="Tutorial: Classic UI Style Sheet">646185bc973851102f77b4b3f153af37</guide>
         <implicit>false</implicit>
         <link/>
         <name>Conclusion</name>
@@ -17,19 +19,19 @@
         <step_type>concl</step_type>
         <sys_class_name>sys_embedded_tour_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-07-11 15:47:37</sys_created_on>
+        <sys_created_on>2022-07-17 23:37:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7684c7b697a011102f77b4b3f153af4e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>81b9e3f4973491102f77b4b3f153af91</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Conclusion</sys_name>
         <sys_overrides/>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
-        <sys_update_name>sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e</sys_update_name>
+        <sys_update_name>sys_embedded_tour_step_81b9e3f4973491102f77b4b3f153af91</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-11 15:47:37</sys_updated_on>
+        <sys_updated_on>2022-07-17 23:43:34</sys_updated_on>
         <target/>
         <target_ref/>
         <title/>
@@ -37,5 +39,5 @@
         <view/>
         <window/>
     </sys_embedded_tour_step>
-    <sys_translated_text action="delete_multiple" query="documentkey=7684c7b697a011102f77b4b3f153af4e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=81b9e3f4973491102f77b4b3f153af91"/>
 </record_update>

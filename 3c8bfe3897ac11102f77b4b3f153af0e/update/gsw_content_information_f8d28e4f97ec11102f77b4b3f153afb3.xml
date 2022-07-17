@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
     <gsw_content_information action="INSERT_OR_UPDATE">
         <active>true</active>
-        <article><![CDATA[<p>Finally, there is a support for .css Style Sheets for the Classic UI. Explore this feature by creating a simple style sheet which changes the color of the form and list header.</p>]]></article>
+        <article><![CDATA[<p>The Classic Experience App adds support for .css Style Sheets for the Classic UI. Explore this feature by creating a simple style sheet which changes the color of the form and list header.</p>]]></article>
         <best_practice_acceptable>false</best_practice_acceptable>
         <dependent_on_contents/>
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
         <description/>
         <embedded_help_qualifier/>
-        <end_point/>
-        <end_point_open_mode/>
-        <end_point_type/>
+        <end_point>gtb.do?sysparm_tour_id=646185bc973851102f77b4b3f153af37</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
         <field/>
         <filter/>
         <filter_result/>
@@ -33,14 +33,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-12 05:45:29</sys_created_on>
         <sys_id>f8d28e4f97ec11102f77b4b3f153afb3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Classic UI CSS Style Sheets</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>gsw_content_information_f8d28e4f97ec11102f77b4b3f153afb3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-12 05:45:29</sys_updated_on>
+        <sys_updated_on>2022-07-17 23:39:24</sys_updated_on>
         <table/>
         <title>Classic UI CSS Style Sheets</title>
         <weight>1</weight>

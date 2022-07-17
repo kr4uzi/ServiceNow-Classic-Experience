@@ -6,7 +6,7 @@
         <action_target_ref display_value="div[id=&quot;element.sys_ui_policy.script_tru">937387b697a011102f77b4b3f153af14</action_target_ref>
         <active>true</active>
         <content><![CDATA[Replace the &#39;Execute if true&#39; script with the script from the message above.]]></content>
-        <guide display_value="UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
         <implicit>false</implicit>
         <link/>
         <name/>

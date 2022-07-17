@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>Red Header</name>
+        <style>.navbar-default {&#13;
+	background-color: red !important;&#13;
+}</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-17 23:18:39</sys_created_on>
+        <sys_id>11056f70973491102f77b4b3f153af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Red Header</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>content_css_11056f70973491102f77b4b3f153af1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 23:18:39</sys_updated_on>
+        <type>local</type>
+        <url/>
+        <x_376096_cxp_use_in_classic_ui>false</x_376096_cxp_use_in_classic_ui>
+    </content_css>
+</record_update>

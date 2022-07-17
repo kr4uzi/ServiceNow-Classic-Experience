@@ -6,7 +6,7 @@
         <action_target_ref display_value="button.btn.btn-icon.icon-menu.navbar-btn">5242cb3297a011102f77b4b3f153aff8</action_target_ref>
         <active>true</active>
         <content><![CDATA[Open the &#39;Additional Items Menu&#39;.]]></content>
-        <guide display_value="UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
         <implicit>false</implicit>
         <link/>
         <name/>

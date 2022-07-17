@@ -6,7 +6,7 @@
         <action_target_ref display_value="x_376096_cxp_ui_policy_button_action.dis">faa487b697a011102f77b4b3f153afe6</action_target_ref>
         <active>true</active>
         <content><![CDATA[Set the &#39;Disable&#39; field to &#39;True&#39;.]]></content>
-        <guide display_value="UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
+        <guide display_value="Tutorial: UI Policy Button Action">ca8d72fe976011102f77b4b3f153af76</guide>
         <implicit>false</implicit>
         <link/>
         <name/>
