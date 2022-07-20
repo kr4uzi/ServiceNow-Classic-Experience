@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide">
+    <sys_embedded_tour_guide action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_parameters/>
+        <autolaunch_order>0</autolaunch_order>
+        <context>x_376096_cxp_ui_action_style.do?sys_id=-1&amp;sysparm_query=icon%3Dtrash%5Ename%3DDelete</context>
+        <description/>
+        <has_concl>true</has_concl>
+        <has_intro>true</has_intro>
+        <name>Tutorial: UI Action Delete Style</name>
+        <options/>
+        <roles>ui_action_admin</roles>
+        <sp_page/>
+        <sp_portal/>
+        <status>published</status>
+        <sys_class_name>sys_embedded_tour_guide</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 17:01:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f55573e97e011102f77b4b3f153afdf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Tutorial: UI Action Delete Style</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_guide_3f55573e97e011102f77b4b3f153afdf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-16 14:59:33</sys_updated_on>
+        <tour_id/>
+        <type>platform</type>
+    </sys_embedded_tour_guide>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.ui_action_styles</name>
+        <script><![CDATA[var x_376096_cxp=x_376096_cxp||{};x_376096_cxp.ui_action_styles=(function(){"use strict";return x_376096_cxp.ui_action_styles||(setTimeout(function(){var o=this,n=new e(o),r=new c(function(t){o.document&&o.document.body||o.document&&"loading"!=o.document.readyState?t():o.addEventListener("DOMContentLoaded",t)}),a=o.localStorage.getItem("x_376096_cxp_ui_action_styles");r.then(n.applyStyles.bind(n,a));var t=new o.GlideAjax("StyleHelper").setScope("x_376096_cxp");t.addParam("sysparm_name","loadUIActionStyles"),t.getXMLAnswer(function(t){var e=JSON.parse(t);a&&a.updated?e.updated&&new Date(e.updated)>new Date(a.updated)&&r.then(n.applyStyles.bind(n,t)):e.updated&&r.then(n.applyStyles.bind(n,t)),o.localStorage.setItem("x_376096_cxp_ui_action_styles",t)})}),{type:"ui_action_styles"});function e(i){var e,d={};return{applyStyles:function(t){var o,t=JSON.parse(t);t&&t.updated&&(o="",t.styles.forEach(function(t){var e;t.ui_actions.length&&(e=t.ui_actions.map(function(t){return'button[gsft_id="'+t+'"]'}),t.icon&&(o+=e.map(function(t){return t+"::before"}).join(","),o+=function(t){if(t in d)return d[t];var e=i.document.createElement("i");e.classList.add("icon-"+t),i.document.body.appendChild(e);t=i.document.createElement("i");i.document.body.appendChild(t);for(var o=i.getComputedStyle(e,"::before"),n=i.getComputedStyle(t,"::before"),r=" {",a=0;a<o.length;a++){var c,u=o.item(a);"display"!=u&&((c=o.getPropertyValue(u))!=n.getPropertyValue(u)&&(r+="\n"+u+": ",r+="content"==u?c.replace(/"$/,' "'):c,r+=";"))}return r+="}\n",e.remove(),t.remove(),r}(t.icon)),(t.background_color||t.text_color)&&(o+=e.join(","),o+=" {",t.background_color&&(o+="\nbackground-color: "+t.background_color+" !important;"),t.text_color&&(o+="\ncolor: "+t.text_color+" !important;"),o+="\n}"),(t.background_color_hover||t.text_color_hover)&&(o+=e.map(function(t){return t+":hover"}).join(","),o+=" {",t.background_color_hover&&(o+="\nbackground-color: "+t.background_color_hover+" !important;"),t.text_color_hover&&(o+="\ncolor: "+t.text_color_hover+" !important;"),o+="\n}"))}),(t=e||i.document.createElement("style")).textContent=o,e||(e=t,i.document.head.appendChild(t)))}}}function c(t){var e=!1,o=[];return t(function(){for(e=!0;o.length;)o.shift()()}),{then:function(t){e?t():o.push(t)}}}})();]]></script>
+        <script_name>ui_action_styles</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-08 09:48:32</sys_created_on>
+        <sys_id>4afbf93597e051102f77b4b3f153af22</sys_id>
+        <sys_mod_count>122</sys_mod_count>
+        <sys_name>x_376096_cxp.ui_action_styles</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_4afbf93597e051102f77b4b3f153af22</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 03:56:57</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>

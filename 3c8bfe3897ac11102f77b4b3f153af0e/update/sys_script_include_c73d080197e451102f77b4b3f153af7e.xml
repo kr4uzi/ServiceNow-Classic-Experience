@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_376096_cxp.UIPolicyHelper</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>UIPolicyHelper</name>
+        <script><![CDATA[var UIPolicyHelper=Class.create();UIPolicyHelper.prototype=Object.extendsObject(global.AbstractAjaxProcessor,{initialize:function(){global.AbstractAjaxProcessor.prototype.initialize.apply(this,arguments),this.ignore_validation_string="// cxp-ignore-ui-policy"},generateUIPolicyMessage:function(t){return"<span style='font-size: large'>UI Policy Validation Failed</span><br />At least one <strong>UI Policy Button Action</strong> is connected to this UI Policy. In order for this feature to work, the following adjustments have to be made to the UI Policy (<a href='sys_ui_policy.do?sys_id="+t.sys_id+"&sysparm_view=advanced&sysparm_view_forced=true'>Advanced View</a>):<br /><b>Run scripts:</b> true<br /><b>Run scripts in UI type:</b> All<br /><b>Execute if true:</b><br /><pre>"+this.generateUIPolicyScript(t,!0)+"</pre><b>Execute if false:</b><br /><pre>"+this.generateUIPolicyScript(t,!1)+"</pre><br />You can <i>deactivate</i> this message for this UI Policy by adding the following line to one of the <strong>Execute if...</strong> scripts:<pre>"+this.ignore_validation_string+"</pre>"},generateUIPolicyScript:function(t,i){return"function onCondition() {\n\tif (typeof g_ui_scripts !== 'undefined') {\n\t\t// Portal\n\t\tg_ui_scripts['x_376096_cxp.UIPolicyButtonActionHandler']('"+t.sys_id+"', "+i+", this);\n\t} else {\n\t\t// Classic UI\n\t\tScriptLoader.getScripts(['x_376096_cxp.UIPolicyButtonActionHandler.jsdbx'], function () {\n\t\t\tUIPolicyButtonActionHandler('"+t.sys_id+"', "+i+");\n\t\t});\n\t}\n}\n"},testUIPolicy:function(t,i){var e=t.getUniqueValue();if(!i){var n=new GlideRecord("x_376096_cxp_ui_policy_button_action");if(n.addQuery("ui_policy",e),n.setLimit(1),n.query(),!n.hasNext())return"valid"}if(t.run_scripts){i=t.script_false.toString(),n=t.script_true.toString();return-1==i.indexOf(this.ignore_validation_string)&&-1==n.indexOf(this.ignore_validation_string)?"10"==t.ui_type&&-1<i.indexOf(e)&&-1<n.indexOf(e)&&-1<i.indexOf("g_ui_scripts")&&-1<n.indexOf("g_ui_scripts")&&-1<i.indexOf("ScriptLoader")&&-1<n.indexOf("ScriptLoader")&&-1<i.indexOf("UIPolicyButtonActionHandler")&&-1<n.indexOf("UIPolicyButtonActionHandler")?"valid":"invalid":"ignored"}return"invalid"},getButtonActions:function(){var t=this.getParameter("ui_policy");if(t){var i=new GlideRecord("x_376096_cxp_ui_policy_button_action");i.addQuery("ui_policy",t),i.query();for(var e=[];i.next();)e.push({button:i.button.toString(),visible:i.visible.toString(),disable:i.disable.toString()});return JSON.stringify(e)}return"[]"},type:"UIPolicyHelper"});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 16:01:42</sys_created_on>
+        <sys_id>c73d080197e451102f77b4b3f153af7e</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>UIPolicyHelper</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_script_include_c73d080197e451102f77b4b3f153af7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 05:33:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

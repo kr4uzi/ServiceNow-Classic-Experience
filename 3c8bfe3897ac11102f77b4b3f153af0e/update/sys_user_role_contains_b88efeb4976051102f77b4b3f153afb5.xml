@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_376096_cxp.ui_policy_button_action_user" name="x_376096_cxp.ui_policy_button_action_user">e24e7ab4976051102f77b4b3f153af7d</contains>
+        <role display_value="ui_policy_admin" name="ui_policy_admin">724384020a0a0bac017448acd4342f99</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 10:13:41</sys_created_on>
+        <sys_id>b88efeb4976051102f77b4b3f153afb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp.ui_policy_button_action_user.ui_policy_admin</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_user_role_contains_b88efeb4976051102f77b4b3f153afb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-05 10:13:41</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

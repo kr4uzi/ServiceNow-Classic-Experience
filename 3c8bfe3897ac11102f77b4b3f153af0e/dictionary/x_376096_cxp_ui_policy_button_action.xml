@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="UI Policy Button Action" max_length="40" name="x_376096_cxp_ui_policy_button_action" sizeclass="6" type="collection">
+        <element attributes="readonly_clickthrough=true" label="UI Action" max_length="32" name="button" reference="sys_ui_action" reference_qual="javascript: &quot;active=true^form_action=true^table=global^ORtableISEMPTY^ORtableIN&quot; + new GlideTableHierarchy(current.ui_policy.table).getTables()" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="3" default="ignore" label="Disable" max_length="40" name="disable" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Leave alone" sequence="10" value="ignore"/>
+                <element inactive_on_update="false" label="True" sequence="20" value="true"/>
+                <element inactive_on_update="false" label="False" sequence="30"/>
+            </choice>
+        </element>
+        <element attributes="readonly_clickthrough=true" label="UI Policy" max_length="32" name="ui_policy" reference="sys_ui_policy" reference_cascade_rule="cascade" type="reference"/>
+        <element choice="3" default="ignore" label="Visible" max_length="40" name="visible" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Leave alone" sequence="10" value="ignore"/>
+                <element inactive_on_update="false" label="True" sequence="20" value="true"/>
+                <element inactive_on_update="false" label="False" sequence="30"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="button"/>
+        </index>
+        <index name="index2">
+            <element name="ui_policy"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_376096_cxp.StyleHelper</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>StyleHelper</name>
+        <script><![CDATA[var StyleHelper=Class.create();StyleHelper.prototype=Object.extendsObject(global.AbstractAjaxProcessor,{loadClassicUIStyles:function(){var e=new GlideRecord("content_css");e.addQuery("x_376096_cxp_use_in_classic_ui",!0),e.query();for(var t=[];e.next();){var o={sys_id:e.getUniqueValue(),name:e.name.toString()};"local"==e.type?o.v=new GlideDateTime(e.sys_updated_on).getNumericValue():"link"==e.type&&(o.url=e.url.toString()),t.push(o)}return JSON.stringify(t)},loadUIActionStyles:function(){var e,t={},o=new GlideRecord("x_376096_cxp_ui_action_style");for(o.addActiveQuery(),o.query();o.next();)t[o.getUniqueValue()]={icon:o.icon.toString(),text_color:o.text_color.toString(),text_color_hover:o.text_color_hover.toString(),background_color:o.background_color.toString(),background_color_hover:o.background_color_hover.toString(),ui_actions:[]};(o=new GlideRecord("x_376096_cxp_ui_action_style")).orderByDesc("sys_updated_on"),o.setLimit(1),o.query(),o.next()&&(e=o.sys_updated_on.toString());var r=new GlideRecord("sys_ui_action");for(r.addNotNullQuery("x_376096_cxp_style").addCondition("x_376096_cxp_style.active",!0),r.query();r.next();)t[r.getValue("x_376096_cxp_style")].ui_actions.push(r.getUniqueValue());var n,i={updated:e,styles:[]};for(n in t){var _=t[n];_.ui_actions.length&&i.styles.push(_)}return JSON.stringify(i)},type:"StyleHelper"});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-08 07:32:23</sys_created_on>
+        <sys_id>c4a5bd3d97a051102f77b4b3f153afdc</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>StyleHelper</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_script_include_c4a5bd3d97a051102f77b4b3f153afdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 23:53:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

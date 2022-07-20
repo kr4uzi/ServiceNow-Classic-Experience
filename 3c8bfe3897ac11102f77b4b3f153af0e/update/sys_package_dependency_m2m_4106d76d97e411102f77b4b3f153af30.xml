@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System (apps/system_ui)" source="apps/system_ui">1295843121120110a866589604c20df0</dependency>
+        <min_version/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 19:51:34</sys_created_on>
+        <sys_id>4106d76d97e411102f77b4b3f153af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 19:51:34</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

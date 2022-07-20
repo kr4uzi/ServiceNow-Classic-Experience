@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.UIPolicyButtonActionHandler</name>
+        <script><![CDATA[function UIPolicyButtonActionHandler(i,t,n){(n=n||this).x_376096_cxp_ui_policy_cache_styles||((e=n.x_376096_cxp_ui_policy_cache_styles=n.document.createElement("style")).innerText=".cxp-disabled,.cxp-disabled[disabled] {  opacity: .4;  cursor: default !important;  pointer-events: none;}",n.document.head.appendChild(e));var c=n.x_376096_cxp_ui_policy_cache||(n.x_376096_cxp_ui_policy_cache={});if(!(i in c)){var e=new n.GlideAjax("UIPolicyHelper").setScope("x_376096_cxp");return e.addParam("sysparm_name","getButtonActions"),e.addParam("ui_policy",i),void e.getXMLAnswer(function(e){c[i]=JSON.parse(e),UIPolicyButtonActionHandler(i,t,n)})}c[i].forEach(function(i){Array.prototype.slice.call(n.document.querySelectorAll('button[gsft_id="'+i.button+'"]')).forEach(function(e){"ignore"!=i.visible&&(e.style.display=i.visible==String(t)?"":"none"),"ignore"!=i.disable&&(e.disabled=i.disable==String(t))}),Array.prototype.slice.call(n.document.querySelectorAll('a[gsft_id="'+i.button+'"]')).forEach(function(e){"ignore"!=i.visible&&(e.style.display=i.visible==String(t)?"":"none"),"ignore"!=i.disable&&e.classList[i.disable==String(t)?"add":"remove"]("cxp-disabled")})})}]]></script>
+        <script_name>UIPolicyButtonActionHandler</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 15:20:14</sys_created_on>
+        <sys_id>90f2000597a451102f77b4b3f153afb8</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>x_376096_cxp.UIPolicyButtonActionHandler</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_90f2000597a451102f77b4b3f153afb8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 04:06:46</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

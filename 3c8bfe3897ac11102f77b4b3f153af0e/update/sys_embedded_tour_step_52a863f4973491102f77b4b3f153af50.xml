@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="content_css.name">16a863f4973491102f77b4b3f153af4e</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<p>Note that all necessary values have already been set.</p>
+<p>Additionally the &#39;Use in Classic UI&#39; field which is not present on the form will be set to &#39;true&#39; when this form is opened from the Classic Experience &gt; Style Sheets / CSS module.</p>]]></content>
+        <guide display_value="Tutorial: Classic UI Style Sheet">646185bc973851102f77b4b3f153af37</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"step_view":""}</options>
+        <order>2</order>
+        <placement>right</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-17 23:33:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>52a863f4973491102f77b4b3f153af50</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_52a863f4973491102f77b4b3f153af50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-17 23:42:25</sys_updated_on>
+        <target/>
+        <target_ref display_value="content_css.name">16a863f4973491102f77b4b3f153af4e</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>content_css.do</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=52a863f4973491102f77b4b3f153af50"/>
+</record_update>
