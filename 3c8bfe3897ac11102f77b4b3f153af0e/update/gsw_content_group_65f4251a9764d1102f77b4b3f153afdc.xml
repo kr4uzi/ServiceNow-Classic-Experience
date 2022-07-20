@@ -15,7 +15,7 @@
         <implicit_dependent_on/>
         <implicit_plugin_dependencies/>
         <is_root_content>false</is_root_content>
-        <order>20</order>
+        <order>30</order>
         <parent display_value="Classic Experience Guided Setup">3b79655597ec91102f77b4b3f153afb9</parent>
         <parents>3b79655597ec91102f77b4b3f153afb9</parents>
         <progress_text/>
@@ -28,14 +28,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-09 19:33:46</sys_created_on>
         <sys_id>65f4251a9764d1102f77b4b3f153afdc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Tutorials: Explore the Features</sys_name>
         <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>gsw_content_group_65f4251a9764d1102f77b4b3f153afdc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-11 17:37:19</sys_updated_on>
+        <sys_updated_on>2022-07-20 20:40:57</sys_updated_on>
         <title>Tutorials: Explore the Features</title>
         <weight>1</weight>
     </gsw_content_group>
