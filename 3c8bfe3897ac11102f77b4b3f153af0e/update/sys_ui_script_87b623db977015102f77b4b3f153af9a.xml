@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.config</name>
+        <script><![CDATA[var x_376096_cxp=x_376096_cxp||{};x_376096_cxp.config=(function(){"use strict";if(x_376096_cxp.config&&"config"==x_376096_cxp.config.type)return x_376096_cxp.config;var n=[],c=!1,t={on_ready:function(a){c?a(t):n.push(a)},type:"config"},_=x_376096_cxp.config?x_376096_cxp.config.ready:null;return x_376096_cxp.get_window(function(e){var r=e.document.getElementById("sys_row");t.update=function(n){var a=new e.GlideAjax("ConfigHelper").setScope("x_376096_cxp");a.addParam("sysparm_name","generate"),a.addParam("table",e.NOW.targetTable),a.addParam("sys_id",e.NOW.sysId),a.addParam("new_record",r&&"-1"===r.value),a.getXMLAnswer(function(a){for(var e in a=JSON.parse(a))t[e]=a[e];n(t)})};var a=new e.GlideAjax("ConfigHelper").setScope("x_376096_cxp");a.addParam("sysparm_name","generate"),a.addParam("table",e.NOW.targetTable),a.addParam("sys_id",e.NOW.sysId),a.addParam("new_record",r&&"-1"===r.value),a.getXMLAnswer(function(a){!function(a){for(var e in a)t[e]=a[e];c=!0,_&&_(t),n.forEach(function(a){a(t)})}(JSON.parse(a))})}),t})();]]></script>
+        <script_name>config</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-25 19:40:33</sys_created_on>
+        <sys_id>87b623db977015102f77b4b3f153af9a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>x_376096_cxp.config</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_87b623db977015102f77b4b3f153af9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 14:37:39</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>

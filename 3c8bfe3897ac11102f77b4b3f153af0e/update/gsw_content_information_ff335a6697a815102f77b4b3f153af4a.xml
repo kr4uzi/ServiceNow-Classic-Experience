@@ -67,7 +67,6 @@
         <sys_updated_on>2022-07-11 16:58:29</sys_updated_on>
         <table_name>gsw_content_information</table_name>
         <table_sys_id>ff335a6697a815102f77b4b3f153af4a</table_sys_id>
-        <x_376096_cxp_is_virtual>false</x_376096_cxp_is_virtual>
         <x_376096_scoped_virtual>false</x_376096_scoped_virtual>
     </sys_attachment>
     <sys_attachment_doc action="INSERT_OR_UPDATE">
