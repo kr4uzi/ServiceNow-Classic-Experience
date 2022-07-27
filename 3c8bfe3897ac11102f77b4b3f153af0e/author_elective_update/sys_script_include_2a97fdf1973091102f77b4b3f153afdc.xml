@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_376096_cxp.AttachmentHelper</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AttachmentHelper</name>
+        <script><![CDATA[/* global Class, global, GlideRecordSecure, GlideSysAttachment, gs, GlideScopedEvaluator, GlideRecord */
+/* eslint no-undef: "error" */
+var AttachmentHelper = Class.create();
+AttachmentHelper.MIME_CONFIG = {
+	'csv': {
+		s: [],
+		t: 'text/csv'
+	},
+	'txt': {
+		s: [],
+		t: 'text/plain'
+	},
+	'json': {
+		s: [],
+		t: 'application/json'
+	},
+	'zip': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/zip'
+	},
+	'docx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+	},
+	'xlsx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+	},
+	'pptx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+	},
+	'vsdx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.ms-visio.drawing'
+	},
+	'jar': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/java-archive'
+	},
+	'pdf': {
+		s: [0x25, 0x50, 0x44, 0x46, 0x2D],
+		t: 'application/pdf'
+	},
+	'doc': {
+		s: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
+		t: 'application/msword'
+	},
+	'xls': {
+		s: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
+		t: 'application/vnd.ms-excel'
+	},
+	'xml': {
+		s: [0x3C, 0x00, 0x3F, 0x00, 0x78, 0x00, 0x6D, 0x00, 0x6C, 0x00, 0x20],
+		t: 'application/xml'
+	},
+	'jpg': {
+		s: [0xFF, 0xD8, 0xFF, 0xEE],
+		t: 'image/jpeg'
+	},
+	'jpeg': {
+		s: [0xFF, 0xD8, 0xFF, 0xEE],
+		t: 'image/jpeg'
+	},
+	'png': {
+		s: [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A],
+		t: 'image/png'
+	},
+	'eml': {
+		s: [0x52, 0x65, 0x63, 0x65, 0x69, 0x76, 0x65, 0x64, 0x3A],
+		t: 'message/rfc822'
+	}
+};
+AttachmentHelper.MIME_RESOLVE = {
+    "text/csv": 0,
+    "text/plain": 0,
+    "application/json": 0,
+    "application/zip": 4,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 4,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 4,
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation": 4,
+    "application/vnd.ms-visio.drawing": 4,
+    "application/java-archive": 4,
+    "application/pdf": 5,
+    "application/msword": 8,
+    "application/vnd.ms-excel": 8,
+    "application/xml": 11,
+    "image/jpeg": 4,
+    "image/png": 8,
+    "message/rfc822": 9
+};
+AttachmentHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	isVirtualAttachmentsAllowed: function (table, sys_id, new_record, fromUIMAcro) {
+		if (gs.getProperty('x_376096_cxp.virtual_attachments.enabled') === 'true') {
+			var mode = gs.getProperty('x_376096_cxp.virtual_attachments.mode');
+			if (mode === 'global') {
+				return true;
+			} else if (mode === 'tables') {
+				var tables = gs.getProperty('x_376096_cxp.virtual_attachments.tables');
+				return tables.indexOf(table) > -1;
+			} else if (mode === 'script') {
+				if (this.getName() == 'isVirtualAttachmentsAllowed') {
+					table = this.getParamter('table');
+					sys_id = this.getParameter('sys_id');
+					new_record = this.getParamter('new_record');
+				}
+				
+				var gse = new GlideScopedEvaluator();
+				
+				var propertyGr = new GlideRecord('sys_properties');
+				propertyGr.addQuery('name', 'x_376096_cxp.virtual_attachments.script');
+				propertyGr.setLimit(1);
+				propertyGr.query();
+				if (propertyGr.next()) {
+					var res = gse.evaluateScript(propertyGr, 'value', {
+						table: table,
+						sys_id: sys_id,
+						new_record: new_record
+					});
+					
+					return !!res;
+				}
+			} else if (mode === 'formatter' && fromUIMAcro) {
+				return true;
+			}
+		}
+		
+		return false;
+	},
+
+	getVirtualAttachments: function (table, sys_id) {
+		gs.info('MKR getVirtualAttachments');
+		if (gs.getProperty('x_376096_cxp.virtual_attachments.enabled') === 'true') {
+			if (this.getName() == 'getVirtualAttachments') {
+				table = this.getParameter('table');
+				sys_id = this.getParameter('sys_id');
+			}
+			
+			var gsa = new GlideSysAttachment();
+			var attachments = {};
+
+			var attGr = new GlideRecordSecure('sys_attachment');
+			attGr.addQuery('table_name', table);
+			attGr.addQuery('table_sys_id', sys_id);
+			attGr.addJoinQuery('x_376096_cxp_virtual_attachment', 'sys_id', 'attachment');
+			attGr.query();
+			while (attGr.next()) {
+				var url = gsa.getContent(attGr);
+				var mimeConfig = AttachmentHelper.MIME_RESOLVE[attGr.content_type];
+				if (mimeConfig) {
+					url = url.substr(mimeConfig);
+				}
+
+				attachments[attGr.getUniqueValue()] = {
+					virtual: true,
+					url: url
+				};
+			}
+
+			if (this.getName() == 'getVirtualAttachments') {
+				return JSON.stringify(attachments);
+			}
+			
+			return attachments;
+		}
+		
+		if (this.getName() == 'getVirtualAttachments') {
+			return '{}';
+		}
+		
+		return {};
+	},
+	
+	type: 'AttachmentHelper'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-20 17:57:57</sys_created_on>
+        <sys_id>2a97fdf1973091102f77b4b3f153afdc</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>AttachmentHelper</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_script_include_2a97fdf1973091102f77b4b3f153afdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-25 14:23:38</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>fc1106b9dbd7c4588aea21c405961986</instance_id>
+        <instance_name>dev101909</instance_name>
+        <name>sys_script_include_2a97fdf1973091102f77b4b3f153afdc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_376096_cxp.AttachmentHelper&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;AttachmentHelper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/* global Class, global, GlideRecordSecure, GlideSysAttachment, gs, GlideScopedEvaluator, GlideRecord */
+/* eslint no-undef: "error" */
+var AttachmentHelper = Class.create();
+AttachmentHelper.MIME_CONFIG = {
+	'csv': {
+		s: [],
+		t: 'text/csv'
+	},
+	'txt': {
+		s: [],
+		t: 'text/plain'
+	},
+	'json': {
+		s: [],
+		t: 'application/json'
+	},
+	'zip': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/zip'
+	},
+	'docx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+	},
+	'xlsx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+	},
+	'pptx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+	},
+	'vsdx': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/vnd.ms-visio.drawing'
+	},
+	'jar': {
+		s: [0x50, 0x4B, 0x03, 0x04],
+		t: 'application/java-archive'
+	},
+	'pdf': {
+		s: [0x25, 0x50, 0x44, 0x46, 0x2D],
+		t: 'application/pdf'
+	},
+	'doc': {
+		s: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
+		t: 'application/msword'
+	},
+	'xls': {
+		s: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1],
+		t: 'application/vnd.ms-excel'
+	},
+	'xml': {
+		s: [0x3C, 0x00, 0x3F, 0x00, 0x78, 0x00, 0x6D, 0x00, 0x6C, 0x00, 0x20],
+		t: 'application/xml'
+	},
+	'jpg': {
+		s: [0xFF, 0xD8, 0xFF, 0xEE],
+		t: 'image/jpeg'
+	},
+	'jpeg': {
+		s: [0xFF, 0xD8, 0xFF, 0xEE],
+		t: 'image/jpeg'
+	},
+	'png': {
+		s: [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A],
+		t: 'image/png'
+	},
+	'eml': {
+		s: [0x52, 0x65, 0x63, 0x65, 0x69, 0x76, 0x65, 0x64, 0x3A],
+		t: 'message/rfc822'
+	}
+};
+AttachmentHelper.MIME_RESOLVE = {
+    "text/csv": 0,
+    "text/plain": 0,
+    "application/json": 0,
+    "application/zip": 4,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 4,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 4,
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation": 4,
+    "application/vnd.ms-visio.drawing": 4,
+    "application/java-archive": 4,
+    "application/pdf": 5,
+    "application/msword": 8,
+    "application/vnd.ms-excel": 8,
+    "application/xml": 11,
+    "image/jpeg": 4,
+    "image/png": 8,
+    "message/rfc822": 9
+};
+AttachmentHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	isVirtualAttachmentsAllowed: function (table, sys_id, new_record, fromUIMAcro) {
+		if (gs.getProperty('x_376096_cxp.virtual_attachments.enabled') === 'true') {
+			var mode = gs.getProperty('x_376096_cxp.virtual_attachments.mode');
+			if (mode === 'global') {
+				return true;
+			} else if (mode === 'tables') {
+				var tables = gs.getProperty('x_376096_cxp.virtual_attachments.tables');
+				return tables.indexOf(table) &gt; -1;
+			} else if (mode === 'script') {
+				if (this.getName() == 'isVirtualAttachmentsAllowed') {
+					table = this.getParamter('table');
+					sys_id = this.getParameter('sys_id');
+					new_record = this.getParamter('new_record');
+				}
+				
+				var gse = new GlideScopedEvaluator();
+				
+				var propertyGr = new GlideRecord('sys_properties');
+				propertyGr.addQuery('name', 'x_376096_cxp.virtual_attachments.script');
+				propertyGr.setLimit(1);
+				propertyGr.query();
+				if (propertyGr.next()) {
+					var res = gse.evaluateScript(propertyGr, 'value', {
+						table: table,
+						sys_id: sys_id,
+						new_record: new_record
+					});
+					
+					return !!res;
+				}
+			} else if (mode === 'formatter' &amp;&amp; fromUIMAcro) {
+				return true;
+			}
+		}
+		
+		return false;
+	},
+
+	getVirtualAttachments: function (table, sys_id) {
+		gs.info('MKR getVirtualAttachments');
+		if (gs.getProperty('x_376096_cxp.virtual_attachments.enabled') === 'true') {
+			if (this.getName() == 'getVirtualAttachments') {
+				table = this.getParameter('table');
+				sys_id = this.getParameter('sys_id');
+			}
+			
+			var gsa = new GlideSysAttachment();
+			var attachments = {};
+
+			var attGr = new GlideRecordSecure('sys_attachment');
+			attGr.addQuery('table_name', table);
+			attGr.addQuery('table_sys_id', sys_id);
+			attGr.addJoinQuery('x_376096_cxp_virtual_attachment', 'sys_id', 'attachment');
+			attGr.query();
+			while (attGr.next()) {
+				var url = gsa.getContent(attGr);
+				var mimeConfig = AttachmentHelper.MIME_RESOLVE[attGr.content_type];
+				if (mimeConfig) {
+					url = url.substr(mimeConfig);
+				}
+
+				attachments[attGr.getUniqueValue()] = {
+					virtual: true,
+					url: url
+				};
+			}
+
+			if (this.getName() == 'getVirtualAttachments') {
+				return JSON.stringify(attachments);
+			}
+			
+			return attachments;
+		}
+		
+		if (this.getName() == 'getVirtualAttachments') {
+			return '{}';
+		}
+		
+		return {};
+	},
+	
+	type: 'AttachmentHelper'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-20 17:57:57&lt;/sys_created_on&gt;&lt;sys_id&gt;2a97fdf1973091102f77b4b3f153afdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentHelper&lt;/sys_name&gt;&lt;sys_package display_value="Classic Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Classic Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2a97fdf1973091102f77b4b3f153afdc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-25 14:23:38&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-103983669</payload_hash>
+        <record_name>AttachmentHelper</record_name>
+        <reverted_from/>
+        <source>ad67aa7d97f091102f77b4b3f153af36</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-25 14:23:38</sys_created_on>
+        <sys_id>4d977e9797bcd1102f77b4b3f153afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18235bdf8b60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-25 14:23:38</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>45977e9778bcd1104e7b8589153014cd</update_guid>
+        <update_guid_history>45977e9778bcd1104e7b8589153014cd:-103983669,fb71ee1fc03cd110865727b7e6ff15de:-1439152324,c311ae9bac3cd110a08e276f0f4bb3d3:58839729,f8cf169b053cd1103e7fd0f45686ffcb:78778145,319e0e1719f8d1107935e947d421c18b:1656807195,dfad0617b3f8d11068ddb3244e262e82:-1837339712,1f09425b21b8d1100fac8cfe0d4085f0:571427668,9d374e5f6ab8d110d9088ea9e68924bb:-1716388372,a3268a1f15b8d110cc8f5d94550d4cfb:-2116465285,5406c61fedb8d110198cc940a617d2c7:333658525,fd9b01cf00349110ca2d86ca0bcabb1e:-737730562,57e90dcb0b3491108a9b0fd390ff9a3b:968278356,d55881cbca349110f866f895d25485b4:-829332484,5803858745349110501a018aafbc9882:727467118,fb92c1076b349110106895ada4c8bdf0:-1994126615,2f4f9cb227305110f746ed80fff8980f:1681373372,b9e410361dfc1110939470dd122c73b1:78887729,f6f35836b1fc11107e3386e82f578432:179787263,f64c2ed275b01110c22a5c3521642194:1163886262,943ce2d2f5b0111077618eab972f5321:-346085048,0babae9272b011103a5546de9eec4970:191928369,ff3aa6121ab0111029a334a2616182d7:2071817415,327ddb421db41110981464b34f7c54d3:1028506204,957d1b4275b411106a4fb893bbfffda3:-1594053307,df76227d4ff091105e84e990ee0bb18a:-156881078,6e84e23937f09110221dbebf79fb6c47:-274302349,bfa8b17550309110634dc746e847dfcd:-1718703877</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-27 14:46:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>5a7862744f4e4820b6444fa29967dab9</sys_id>
+        <sys_metadata>2a97fdf1973091102f77b4b3f153afdc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttachmentHelper</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_2a97fdf1973091102f77b4b3f153afdc</sys_update_name>
+        <sys_update_version display_value="sys_script_include_2a97fdf1973091102f77b4b3f153afdc">4d977e9797bcd1102f77b4b3f153afcd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 14:46:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
