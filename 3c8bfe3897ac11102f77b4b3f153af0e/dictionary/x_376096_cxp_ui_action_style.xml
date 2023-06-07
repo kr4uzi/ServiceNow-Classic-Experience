@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" extends="sys_metadata" label="UI Action Style" max_length="40" name="x_376096_cxp_ui_action_style" sizeclass="3" type="collection">
+    <element attributes="update_synch=true" db_object_id="31f876d197572110d70ef207f053aff5" extends="sys_metadata" label="UI Action Style" max_length="40" name="x_376096_cxp_ui_action_style" type="collection">
+        <element label="Action names" max_length="255" name="action_names" type="string"/>
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Background color" max_length="40" name="background_color" type="color"/>
         <element label="Background color (hover)" max_length="40" name="background_color_hover" type="color"/>
