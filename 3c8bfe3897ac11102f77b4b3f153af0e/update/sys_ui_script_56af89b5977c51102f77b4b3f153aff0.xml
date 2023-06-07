@@ -4,21 +4,76 @@
         <description/>
         <global>true</global>
         <ignore_in_now_experience>false</ignore_in_now_experience>
-        <name>x_376096_cxp.classic_ui_injects</name>
-        <script><![CDATA[var x_376096_cxp=x_376096_cxp||{};x_376096_cxp.classic_ui_injects=(function(){"use strict";if(x_376096_cxp.classic_ui_injects)return x_376096_cxp.classic_ui_injects;var _,n=window;return x_376096_cxp.config||(_=[],x_376096_cxp.config={ready:function(n){_.forEach(function(c){c(n)})},on_ready:function(c){_.push(c)}}),x_376096_cxp.get_window||(x_376096_cxp.get_window=function(c){n?c(n):setTimeout(function(){c(n=this)})}),c("x_376096_cxp.Promise.jsdbx?v=1"),["config","classic_css","virtual_attachments"].map(function(c){return"x_376096_cxp."+c+".jsdbx?v=1"}).forEach(c),{type:"classic_ui_injects"};function c(_){x_376096_cxp.get_window(function(c){var n=c.document.createElement("script");n.src=_,c.document.head.appendChild(n)})}})();]]></script>
-        <script_name>classic_ui_injects</script_name>
+        <name>x_376096_cxp.loader_desktop</name>
+        <script><![CDATA[var x_376096_cxp = x_376096_cxp || {};
+x_376096_cxp.loader_desktop = (function() {
+	"use strict";
+	
+	/* global window, setTimeout */
+	/* eslint no-undef: "error" */
+	if (x_376096_cxp.loader_desktop) {
+		return x_376096_cxp.loader_desktop;
+	}
+	
+	var resources = {};
+	var resourceCallbacks = {};
+	
+	if (typeof window !== 'undefined' && window) {
+		resources['window'] = window;
+	} else {
+		setTimeout(function () {
+			setResource('window', this);
+		});
+	}
+	
+	createScript('x_376096_cxp.css_inject_desktop.jsdbx?v=1.0.0');
+	
+	return {
+		set: setResource,
+		get: getResource,
+		type: 'loader_desktop'
+	};
+	
+	function getResource(resource, callback) {
+		if (resource in resources) {
+			callback(resources[resource]);
+		} else {
+			if (!(resource in resourceCallbacks)) {
+				resourceCallbacks[resource] = [];
+			}
+			
+			resourceCallbacks[resource].push(callback);
+		}
+	}
+	
+	function setResource(resource, value) {
+		resources[resource] = value;
+		(resourceCallbacks[resource] || []).forEach(function (callback) {
+			callback(value);
+		});
+	}
+	
+	function createScript(src) {
+		getResource('window', function ($window) {
+			var script = $window.document.createElement('script');
+			script.src = src;
+			$window.document.head.appendChild(script);
+		});
+	}
+})();]]></script>
+        <script_name>loader_desktop</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-20 14:58:43</sys_created_on>
         <sys_id>56af89b5977c51102f77b4b3f153aff0</sys_id>
-        <sys_mod_count>83</sys_mod_count>
-        <sys_name>x_376096_cxp.classic_ui_injects</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_mod_count>91</sys_mod_count>
+        <sys_name>x_376096_cxp.loader_desktop</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_ui_script_56af89b5977c51102f77b4b3f153aff0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-27 14:40:17</sys_updated_on>
+        <sys_updated_on>2023-06-07 19:32:24</sys_updated_on>
         <ui_type>0</ui_type>
         <use_scoped_format>true</use_scoped_format>
     </sys_ui_script>

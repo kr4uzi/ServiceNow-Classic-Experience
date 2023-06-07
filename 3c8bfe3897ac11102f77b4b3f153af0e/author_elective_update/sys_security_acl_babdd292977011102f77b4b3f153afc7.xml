@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_376096_cxp_virtual_attachment</description>
+        <name>x_376096_cxp_virtual_attachment</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-22 09:56:47</sys_created_on>
+        <sys_id>babdd292977011102f77b4b3f153afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_virtual_attachment</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_security_acl_babdd292977011102f77b4b3f153afc7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-22 09:56:47</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_security_acl_babdd292977011102f77b4b3f153afc7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_376096_cxp_virtual_attachment</description>
+        <name>x_376096_cxp_virtual_attachment</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-22 09:56:47</sys_created_on>
+        <sys_id>babdd292977011102f77b4b3f153afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_virtual_attachment</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_security_acl_babdd292977011102f77b4b3f153afc7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-22 09:56:47</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>995263991</payload_hash>
+        <record_name>x_376096_cxp_virtual_attachment</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:15</sys_created_on>
+        <sys_id>0a097ed197572110d70ef207f053afb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3c6300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:15</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>c6097ed1d45721100914b263ab7d4ab1</update_guid>
+        <update_guid_history>c6097ed1d45721100914b263ab7d4ab1:995263991</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 14:35:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>c2a6f16c315840acb872e8011043df84</sys_id>
+        <sys_metadata>babdd292977011102f77b4b3f153afc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_virtual_attachment</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent display_value="">02f8b6d197572110d70ef207f053af9e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_babdd292977011102f77b4b3f153afc7</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_babdd292977011102f77b4b3f153afc7">0a097ed197572110d70ef207f053afb1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 14:35:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

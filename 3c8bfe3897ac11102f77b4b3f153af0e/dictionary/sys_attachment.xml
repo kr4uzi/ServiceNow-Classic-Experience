@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="largeTable=true" label="Attachment" max_length="40" name="sys_attachment" sizeclass="1961" type="collection">
-        <element label="Is virtual" max_length="40" name="x_376096_cxp_is_virtual" type="boolean"/>
-    </element>
-</database>

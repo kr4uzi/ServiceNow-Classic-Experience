@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>virtual_attachments</name>
+        <scoped_name>x_376096_cxp_virtual_attachments</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-23 12:21:11</sys_created_on>
+        <sys_id>e2f7087697bc11102f77b4b3f153af87</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>virtual_attachments</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_macro_e2f7087697bc11102f77b4b3f153af87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-25 20:32:58</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g2:evaluate var="jvar_config" expression="new ConfigHelper().generate(current.getTableName(), current.getUniqueValue(), current.isNewRecord(), true)" />
+	<script>
+		eval("$[jvar_config]");
+
+		if (x_376096_cxp.virtual_attachments $[AND] x_376096_cxp.virtual_attachments.init) {
+			x_376096_cxp.virtual_attachments.init();
+		}
+	</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_ui_macro_e2f7087697bc11102f77b4b3f153af87</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;
+    &lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;category&gt;general&lt;/category&gt;
+        &lt;description/&gt;
+        &lt;media_type/&gt;
+        &lt;name&gt;virtual_attachments&lt;/name&gt;
+        &lt;scoped_name&gt;x_376096_cxp_virtual_attachments&lt;/scoped_name&gt;
+        &lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-07-23 12:21:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e2f7087697bc11102f77b4b3f153af87&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;52&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;virtual_attachments&lt;/sys_name&gt;
+        &lt;sys_package display_value="Classic Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Classic Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_ui_macro_e2f7087697bc11102f77b4b3f153af87&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-07-25 20:32:58&lt;/sys_updated_on&gt;
+        &lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+	&lt;g2:evaluate var="jvar_config" expression="new ConfigHelper().generate(current.getTableName(), current.getUniqueValue(), current.isNewRecord(), true)" /&gt;
+	&lt;script&gt;
+		eval("$[jvar_config]");
+
+		if (x_376096_cxp.virtual_attachments $[AND] x_376096_cxp.virtual_attachments.init) {
+			x_376096_cxp.virtual_attachments.init();
+		}
+	&lt;/script&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;
+    &lt;/sys_ui_macro&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-32817318</payload_hash>
+        <record_name>virtual_attachments</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:16</sys_created_on>
+        <sys_id>de09bed197572110d70ef207f053af58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3cb950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:16</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>9e09bed1bc572110c6d0b10e88af6758</update_guid>
+        <update_guid_history>9e09bed1bc572110c6d0b10e88af6758:-32817318</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 14:35:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>62895d1185dd453e9b2caaab57565204</sys_id>
+        <sys_metadata>e2f7087697bc11102f77b4b3f153af87</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>virtual_attachments</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_e2f7087697bc11102f77b4b3f153af87</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_e2f7087697bc11102f77b4b3f153af87">de09bed197572110d70ef207f053af58</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 14:35:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

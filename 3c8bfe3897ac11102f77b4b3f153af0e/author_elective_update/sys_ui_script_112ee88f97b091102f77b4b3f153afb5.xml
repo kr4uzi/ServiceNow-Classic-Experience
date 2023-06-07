@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_376096_cxp.Promise</name>
+        <script><![CDATA[var x_376096_cxp=x_376096_cxp||{};x_376096_cxp.Promise=(function(){"use strict";return function r(n){var t=!1,u=[];return n(function(n){for(t=!0;u.length;)u.shift()(n)}),{then:function(n){return t?n(res):u.push(n),function(n){return new r(n)}}}}})();]]></script>
+        <script_name>Promise</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-24 09:45:57</sys_created_on>
+        <sys_id>112ee88f97b091102f77b4b3f153afb5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_376096_cxp.Promise</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_ui_script_112ee88f97b091102f77b4b3f153afb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 14:38:08</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_ui_script_112ee88f97b091102f77b4b3f153afb5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;
+    &lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;description/&gt;
+        &lt;global&gt;false&lt;/global&gt;
+        &lt;ignore_in_now_experience&gt;false&lt;/ignore_in_now_experience&gt;
+        &lt;name&gt;x_376096_cxp.Promise&lt;/name&gt;
+        &lt;script&gt;&lt;![CDATA[var x_376096_cxp=x_376096_cxp||{};x_376096_cxp.Promise=(function(){"use strict";return function r(n){var t=!1,u=[];return n(function(n){for(t=!0;u.length;)u.shift()(n)}),{then:function(n){return t?n(res):u.push(n),function(n){return new r(n)}}}}})();]]&gt;&lt;/script&gt;
+        &lt;script_name&gt;Promise&lt;/script_name&gt;
+        &lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-07-24 09:45:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;112ee88f97b091102f77b4b3f153afb5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;x_376096_cxp.Promise&lt;/sys_name&gt;
+        &lt;sys_package display_value="Classic Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Classic Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_ui_script_112ee88f97b091102f77b4b3f153afb5&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-07-27 14:38:08&lt;/sys_updated_on&gt;
+        &lt;ui_type&gt;0&lt;/ui_type&gt;
+        &lt;use_scoped_format&gt;true&lt;/use_scoped_format&gt;
+    &lt;/sys_ui_script&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1948194646</payload_hash>
+        <record_name>x_376096_cxp.Promise</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:17</sys_created_on>
+        <sys_id>9e09bed197572110d70ef207f053af76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3ccee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:17</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>5e09bed1d257211088bae30523342676</update_guid>
+        <update_guid_history>5e09bed1d257211088bae30523342676:-1948194646</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 18:56:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>1a94677c02c04ff4833a0f97faa67f64</sys_id>
+        <sys_metadata>112ee88f97b091102f77b4b3f153afb5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp.Promise</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_ui_script_112ee88f97b091102f77b4b3f153afb5</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_112ee88f97b091102f77b4b3f153afb5">9e09bed197572110d70ef207f053af76</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 18:56:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Comma seperated lists of tables where the virtual attachments are enabled by default. If empty, and </description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_376096_cxp.virtual_attachments.tables</name>
+        <read_roles/>
+        <suffix>virtual_attachments.tables</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-23 12:31:50</sys_created_on>
+        <sys_id>54e9083a97bc11102f77b4b3f153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp.virtual_attachments.tables</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_properties_54e9083a97bc11102f77b4b3f153afca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-23 12:31:50</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=54e9083a97bc11102f77b4b3f153afca"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_properties_54e9083a97bc11102f77b4b3f153afca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Comma seperated lists of tables where the virtual attachments are enabled by default. If empty, and </description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_376096_cxp.virtual_attachments.tables</name>
+        <read_roles/>
+        <suffix>virtual_attachments.tables</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-23 12:31:50</sys_created_on>
+        <sys_id>54e9083a97bc11102f77b4b3f153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp.virtual_attachments.tables</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_properties_54e9083a97bc11102f77b4b3f153afca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-23 12:31:50</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=54e9083a97bc11102f77b4b3f153afca"/>
+</record_update>]]></payload>
+        <payload_hash>655682461</payload_hash>
+        <record_name>x_376096_cxp.virtual_attachments.tables</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:13</sys_created_on>
+        <sys_id>ad093ed197572110d70ef207f053afdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3bec30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:13</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>6d093ed186572110ea040e8a52e5cddd</update_guid>
+        <update_guid_history>6d093ed186572110ea040e8a52e5cddd:655682461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 18:47:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>0afe24ed7a6e47e48159bb47825235e4</sys_id>
+        <sys_metadata>54e9083a97bc11102f77b4b3f153afca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp.virtual_attachments.tables</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_properties_54e9083a97bc11102f77b4b3f153afca</sys_update_name>
+        <sys_update_version display_value="sys_properties_54e9083a97bc11102f77b4b3f153afca">ad093ed197572110d70ef207f053afdd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 18:47:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_376096_cxp.ConfigHelper</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ConfigHelper</name>
+        <script><![CDATA[var ConfigHelper=Class.create();ConfigHelper.MIME_CONFIG={csv:{s:[],t:"text/csv"},txt:{s:[],t:"text/plain"},json:{s:[],t:"application/json"},zip:{s:[80,75,3,4],t:"application/zip"},docx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},xlsx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},pptx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.presentationml.presentation"},vsdx:{s:[80,75,3,4],t:"application/vnd.ms-visio.drawing"},jar:{s:[80,75,3,4],t:"application/java-archive"},pdf:{s:[37,80,68,70,45],t:"application/pdf"},doc:{s:[208,207,17,224,161,177,26,225],t:"application/msword"},xls:{s:[208,207,17,224,161,177,26,225],t:"application/vnd.ms-excel"},xml:{s:[60,0,63,0,120,0,109,0,108,0,32],t:"application/xml"},jpg:{s:[255,216,255,238],t:"image/jpeg"},jpeg:{s:[255,216,255,238],t:"image/jpeg"},png:{s:[137,80,78,71,13,10,26,10],t:"image/png"},eml:{s:[82,101,99,101,105,118,101,100,58],t:"message/rfc822"}},ConfigHelper.MIME_RESOLVE={"text/csv":0,"text/plain":0,"application/json":0,"application/zip":4,"application/vnd.openxmlformats-officedocument.wordprocessingml.document":4,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":4,"application/vnd.openxmlformats-officedocument.presentationml.presentation":4,"application/vnd.ms-visio.drawing":4,"application/java-archive":4,"application/pdf":5,"application/msword":8,"application/vnd.ms-excel":8,"application/xml":11,"image/jpeg":4,"image/png":8,"message/rfc822":9},ConfigHelper.prototype=Object.extendsObject(global.AbstractAjaxProcessor,{generate:function(e,t,a,n){"generate"==this.getName()&&(e=this.getParameter("table"),t=this.getParameter("sys_id"),a="true"==this.getParameter("new_record"));var i,s,r=new GlideDigest,l={mime_config:ConfigHelper.MIME_CONFIG,classic_css:{enabled:"true"===gs.getProperty("x_376096_cxp.classic_ui_css.enabled")},virtual_attachments:{enabled:"true"===gs.getProperty("x_376096_cxp.virtual_attachments.enabled")}};return l.classic_css.enabled&&(l.classic_css.styles=function(){var e=new GlideRecord("content_css");e.addQuery("x_376096_cxp_use_in_classic_ui",!0),e.query();var t=[];for(;e.next();){var a={sys_id:e.getUniqueValue(),name:e.name.toString()};"local"==e.type?a.v=new GlideDateTime(e.sys_updated_on).getNumericValue():"link"==e.type&&(a.url=e.url.toString()),t.push(a)}return t}()),l.virtual_attachments.enabled&&("global"===(i=gs.getProperty("x_376096_cxp.virtual_attachments.mode"))||("tables"===i?(s=gs.getProperty("x_376096_cxp.virtual_attachments.tables")||"",e?l.virtual_attachments.enabled=-1<s.indexOf(e):l.tables=s?s.split(",").map(r.getSHA1Hex):[]):"script"===i?e&&t?((r=new GlideRecord("sys_properties")).addQuery("name","x_376096_cxp.virtual_attachments.script"),r.setLimit(1),r.query(),r.next()?(a=(new GlideScopedEvaluator).evaluateScript(r,"value",{table:e,sys_id:t,new_record:a}),l.virtual_attachments.enabled=!!a):l.virtual_attachments.enabled=!1):l.virtual_attachments.enabled=!1:l.virtual_attachments.enabled="formatter"===i&&!!n)),l.virtual_attachments.enabled&&(l.virtual_attachments.attachments=function(e,t){var a=new GlideSysAttachment,n={},i=new GlideRecordSecure("sys_attachment");i.addQuery("table_name",e),i.addQuery("table_sys_id",t),i.addJoinQuery("x_376096_cxp_virtual_attachment","sys_id","attachment"),i.query();for(;i.next();){var s=a.getContent(i),r=ConfigHelper.MIME_RESOLVE[i.content_type];r&&(s=s.substr(r)),n[i.getUniqueValue()]={virtual:!0,url:s}}return n}(e,t)),"generate"==this.getName()?JSON.stringify(l):l},type:"ConfigHelper"});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-25 13:02:16</sys_created_on>
+        <sys_id>7474ea13977cd1102f77b4b3f153af17</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>ConfigHelper</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_script_include_7474ea13977cd1102f77b4b3f153af17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 14:48:27</sys_updated_on>
+    </sys_script_include>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_script_include_7474ea13977cd1102f77b4b3f153af17</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;
+    &lt;sys_script_include action="INSERT_OR_UPDATE"&gt;
+        &lt;access&gt;package_private&lt;/access&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;api_name&gt;x_376096_cxp.ConfigHelper&lt;/api_name&gt;
+        &lt;caller_access/&gt;
+        &lt;client_callable&gt;true&lt;/client_callable&gt;
+        &lt;description/&gt;
+        &lt;name&gt;ConfigHelper&lt;/name&gt;
+        &lt;script&gt;&lt;![CDATA[var ConfigHelper=Class.create();ConfigHelper.MIME_CONFIG={csv:{s:[],t:"text/csv"},txt:{s:[],t:"text/plain"},json:{s:[],t:"application/json"},zip:{s:[80,75,3,4],t:"application/zip"},docx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},xlsx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},pptx:{s:[80,75,3,4],t:"application/vnd.openxmlformats-officedocument.presentationml.presentation"},vsdx:{s:[80,75,3,4],t:"application/vnd.ms-visio.drawing"},jar:{s:[80,75,3,4],t:"application/java-archive"},pdf:{s:[37,80,68,70,45],t:"application/pdf"},doc:{s:[208,207,17,224,161,177,26,225],t:"application/msword"},xls:{s:[208,207,17,224,161,177,26,225],t:"application/vnd.ms-excel"},xml:{s:[60,0,63,0,120,0,109,0,108,0,32],t:"application/xml"},jpg:{s:[255,216,255,238],t:"image/jpeg"},jpeg:{s:[255,216,255,238],t:"image/jpeg"},png:{s:[137,80,78,71,13,10,26,10],t:"image/png"},eml:{s:[82,101,99,101,105,118,101,100,58],t:"message/rfc822"}},ConfigHelper.MIME_RESOLVE={"text/csv":0,"text/plain":0,"application/json":0,"application/zip":4,"application/vnd.openxmlformats-officedocument.wordprocessingml.document":4,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":4,"application/vnd.openxmlformats-officedocument.presentationml.presentation":4,"application/vnd.ms-visio.drawing":4,"application/java-archive":4,"application/pdf":5,"application/msword":8,"application/vnd.ms-excel":8,"application/xml":11,"image/jpeg":4,"image/png":8,"message/rfc822":9},ConfigHelper.prototype=Object.extendsObject(global.AbstractAjaxProcessor,{generate:function(e,t,a,n){"generate"==this.getName()&amp;&amp;(e=this.getParameter("table"),t=this.getParameter("sys_id"),a="true"==this.getParameter("new_record"));var i,s,r=new GlideDigest,l={mime_config:ConfigHelper.MIME_CONFIG,classic_css:{enabled:"true"===gs.getProperty("x_376096_cxp.classic_ui_css.enabled")},virtual_attachments:{enabled:"true"===gs.getProperty("x_376096_cxp.virtual_attachments.enabled")}};return l.classic_css.enabled&amp;&amp;(l.classic_css.styles=function(){var e=new GlideRecord("content_css");e.addQuery("x_376096_cxp_use_in_classic_ui",!0),e.query();var t=[];for(;e.next();){var a={sys_id:e.getUniqueValue(),name:e.name.toString()};"local"==e.type?a.v=new GlideDateTime(e.sys_updated_on).getNumericValue():"link"==e.type&amp;&amp;(a.url=e.url.toString()),t.push(a)}return t}()),l.virtual_attachments.enabled&amp;&amp;("global"===(i=gs.getProperty("x_376096_cxp.virtual_attachments.mode"))||("tables"===i?(s=gs.getProperty("x_376096_cxp.virtual_attachments.tables")||"",e?l.virtual_attachments.enabled=-1&lt;s.indexOf(e):l.tables=s?s.split(",").map(r.getSHA1Hex):[]):"script"===i?e&amp;&amp;t?((r=new GlideRecord("sys_properties")).addQuery("name","x_376096_cxp.virtual_attachments.script"),r.setLimit(1),r.query(),r.next()?(a=(new GlideScopedEvaluator).evaluateScript(r,"value",{table:e,sys_id:t,new_record:a}),l.virtual_attachments.enabled=!!a):l.virtual_attachments.enabled=!1):l.virtual_attachments.enabled=!1:l.virtual_attachments.enabled="formatter"===i&amp;&amp;!!n)),l.virtual_attachments.enabled&amp;&amp;(l.virtual_attachments.attachments=function(e,t){var a=new GlideSysAttachment,n={},i=new GlideRecordSecure("sys_attachment");i.addQuery("table_name",e),i.addQuery("table_sys_id",t),i.addJoinQuery("x_376096_cxp_virtual_attachment","sys_id","attachment"),i.query();for(;i.next();){var s=a.getContent(i),r=ConfigHelper.MIME_RESOLVE[i.content_type];r&amp;&amp;(s=s.substr(r)),n[i.getUniqueValue()]={virtual:!0,url:s}}return n}(e,t)),"generate"==this.getName()?JSON.stringify(l):l},type:"ConfigHelper"});]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-07-25 13:02:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;7474ea13977cd1102f77b4b3f153af17&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;ConfigHelper&lt;/sys_name&gt;
+        &lt;sys_package display_value="Classic Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;
+        &lt;sys_policy&gt;read&lt;/sys_policy&gt;
+        &lt;sys_scope display_value="Classic Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_include_7474ea13977cd1102f77b4b3f153af17&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-07-27 14:48:27&lt;/sys_updated_on&gt;
+    &lt;/sys_script_include&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-957616179</payload_hash>
+        <record_name>ConfigHelper</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:14</sys_created_on>
+        <sys_id>39097ed197572110d70ef207f053af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3c3410000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:14</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f5097ed1b8572110dc1d1b881091f559</update_guid>
+        <update_guid_history>f5097ed1b8572110dc1d1b881091f559:-957616179</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 14:36:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>63da057417624d94867dae50788d7810</sys_id>
+        <sys_metadata>7474ea13977cd1102f77b4b3f153af17</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ConfigHelper</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_7474ea13977cd1102f77b4b3f153af17</sys_update_name>
+        <sys_update_version display_value="sys_script_include_7474ea13977cd1102f77b4b3f153af17">39097ed197572110d70ef207f053af59</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 14:36:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
