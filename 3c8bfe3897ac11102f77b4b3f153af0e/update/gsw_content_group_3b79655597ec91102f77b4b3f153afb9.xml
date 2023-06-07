@@ -8,8 +8,8 @@
         <dependent_on_plugins/>
         <dependent_on_plugins_ids/>
         <description><![CDATA[<h2>Introduction</h2>
-<p>The <strong>Classic Experience</strong> Scoped App is a easy-to-use, ServiceNow-like Scoped App that extends the <strong>Classic UI</strong> (often also called &#34;Backend&#34;) with the following features:</p>
-<ul style="list-style-position: inside;"><li>UI Action Styles*</li><li>UI Policy based disabled and visible states of UI Actions*</li><li>Support for CSS Style Sheets in the classic UI**</li><li>Virtual Attachments: Show Sharepoint, Teams or other external references as attachments on a record</li></ul>
+<p>The <strong>Core Experience</strong> Scoped App is a easy-to-use, ServiceNow-like Scoped App that extends the <strong>Classic UI</strong> (often also called &#34;Backend&#34; or &#34;Desktop&#34;) with the following features:</p>
+<ul style="list-style-position: inside;"><li>UI Action Styles*</li><li>UI Policy based disabled and visible states of UI Actions*</li><li>Support for CSS Style Sheets in the classic UI**</li></ul>
 <p>* Also works on the Service Portal<br />** The Service Portal has a different technique and supports Style Sheets on its own</p>
 <p> </p>
 <p>This Guided Setup will show you how to enable all features of the <strong>Classic Experience</strong> Scoped App.<br /><br /></p>]]></description>
@@ -33,15 +33,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 17:19:21</sys_created_on>
         <sys_id>3b79655597ec91102f77b4b3f153afb9</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_name>Classic Experience Guided Setup</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Core Experience Guided Setup</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>gsw_content_group_3b79655597ec91102f77b4b3f153afb9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-20 20:49:12</sys_updated_on>
-        <title>Classic Experience Guided Setup</title>
+        <sys_updated_on>2023-06-07 19:38:31</sys_updated_on>
+        <title>Core Experience Guided Setup</title>
         <weight>1</weight>
     </gsw_content_group>
     <sys_translated_text action="delete_multiple" query="documentkey=3b79655597ec91102f77b4b3f153afb9"/>
