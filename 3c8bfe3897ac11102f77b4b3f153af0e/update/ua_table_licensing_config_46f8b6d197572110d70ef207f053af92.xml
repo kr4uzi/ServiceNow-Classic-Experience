@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-05 10:12:28</sys_created_on>
-        <sys_id>034e7ab4976051102f77b4b3f153afb8</sys_id>
+        <sys_id>46f8b6d197572110d70ef207f053af92</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_376096_cxp_ui_policy_button_action</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
-        <sys_update_name>ua_table_licensing_config_034e7ab4976051102f77b4b3f153afb8</sys_update_name>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>ua_table_licensing_config_46f8b6d197572110d70ef207f053af92</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-07-05 10:12:28</sys_updated_on>
     </ua_table_licensing_config>

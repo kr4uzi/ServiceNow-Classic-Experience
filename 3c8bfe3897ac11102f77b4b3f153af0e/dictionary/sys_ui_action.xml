@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" extends="sys_metadata" label="UI Action" max_length="40" name="sys_ui_action" read_roles="ui_action_admin" sizeclass="2325" text_index="true" type="collection">
+    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" db_object_id="d4b8c702c51021108c8b506e733c4c3c" extends="sys_metadata" label="UI Action" max_length="40" name="sys_ui_action" read_roles="ui_action_admin" text_index="true" type="collection">
         <element attributes="readonly_clickthrough=true" label="Style" max_length="32" name="x_376096_cxp_style" reference="x_376096_cxp_ui_action_style" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
             <element name="x_376096_cxp_style"/>

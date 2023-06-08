@@ -14,9 +14,9 @@
         <sys_id>c73d080197e451102f77b4b3f153af7e</sys_id>
         <sys_mod_count>26</sys_mod_count>
         <sys_name>UIPolicyHelper</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_script_include_c73d080197e451102f77b4b3f153af7e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-07-12 05:33:19</sys_updated_on>

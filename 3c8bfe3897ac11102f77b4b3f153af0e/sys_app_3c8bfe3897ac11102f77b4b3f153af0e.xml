@@ -3,7 +3,7 @@
         <active>true</active>
         <can_edit_in_studio>true</can_edit_in_studio>
         <enforce_license>log</enforce_license>
-        <guided_setup_guid display_value="Classic Experience Guided Setup">3b79655597ec91102f77b4b3f153afb9</guided_setup_guid>
+        <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
         <installed_as_dependency>false</installed_as_dependency>
         <js_level>es_latest</js_level>
@@ -29,16 +29,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-05 10:00:19</sys_created_on>
         <sys_id>3c8bfe3897ac11102f77b4b3f153af0e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-07 18:35:44</sys_updated_on>
+        <sys_updated_on>2023-06-08 19:37:38</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=3c8bfe3897ac11102f77b4b3f153af0e"/>
 </record_update>

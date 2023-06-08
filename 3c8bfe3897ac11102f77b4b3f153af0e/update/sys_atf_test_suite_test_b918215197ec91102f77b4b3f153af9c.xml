@@ -8,9 +8,9 @@
         <sys_id>b918215197ec91102f77b4b3f153af9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>e751409d97e491102f77b4b3f153af3b</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_atf_test_suite_test_b918215197ec91102f77b4b3f153af9c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-07-06 17:12:48</sys_updated_on>

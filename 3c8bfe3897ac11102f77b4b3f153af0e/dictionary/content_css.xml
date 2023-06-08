@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" extends="sys_metadata" label="Style Sheet" max_length="40" name="content_css" read_roles="content_admin" sizeclass="38" text_index="true" type="collection">
+    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" db_object_id="8ac8c742c51021108c8b506e733c4ce2" extends="sys_metadata" label="Style Sheet" max_length="40" name="content_css" read_roles="content_admin" text_index="true" type="collection">
         <element label="Use in Classic UI" max_length="40" name="x_376096_cxp_use_in_classic_ui" type="boolean"/>
     </element>
 </database>
