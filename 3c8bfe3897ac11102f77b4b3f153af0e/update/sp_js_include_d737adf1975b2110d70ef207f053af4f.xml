@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include">
+    <sp_js_include action="INSERT_OR_UPDATE">
+        <display_name>CXP Loader</display_name>
+        <source>local</source>
+        <sys_class_name>sp_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:30:05</sys_created_on>
+        <sys_id>d737adf1975b2110d70ef207f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CXP Loader</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_ui_script display_value="x_376096_cxp.loader">d81c0db1977c51102f77b4b3f153afb7</sys_ui_script>
+        <sys_update_name>sp_js_include_d737adf1975b2110d70ef207f053af4f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:30:05</sys_updated_on>
+        <url/>
+    </sp_js_include>
+</record_update>

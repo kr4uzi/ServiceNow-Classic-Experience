@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref/>
+        <active>true</active>
+        <content><![CDATA[You have configured a UI Policy that sets a Button to disabled if the UI Policy Condition matches. A pre-generated script has to be added to the UI Policy&#39;s Script section in order for this feature to work. This feature works both on the Classic UI as well as the Service Portal.]]></content>
+        <guide/>
+        <implicit>false</implicit>
+        <link/>
+        <name>Conclusion</name>
+        <options/>
+        <order>999</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>concl</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 15:47:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7684c7b697a011102f77b4b3f153af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Conclusion</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 15:47:37</sys_updated_on>
+        <target/>
+        <target_ref/>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window/>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=7684c7b697a011102f77b4b3f153af4e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref/&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[You have configured a UI Policy that sets a Button to disabled if the UI Policy Condition matches. A pre-generated script has to be added to the UI Policy&amp;#39;s Script section in order for this feature to work. This feature works both on the Classic UI as well as the Service Portal.]]&gt;&lt;/content&gt;&lt;guide/&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name&gt;Conclusion&lt;/name&gt;&lt;options/&gt;&lt;order&gt;999&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;concl&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-11 15:47:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7684c7b697a011102f77b4b3f153af4e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Conclusion&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Core Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Core Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-11 15:47:37&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref/&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window/&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7684c7b697a011102f77b4b3f153af4e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1475361626</payload_hash>
+        <record_name>Conclusion</record_name>
+        <reverted_from/>
+        <source>83b52c65971f2110d70ef207f053aff3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:25</sys_created_on>
+        <sys_id>6394a531975b2110d70ef207f053afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1889c7220680000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:25</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>2f94a531545b2110c40e6fee91ad1ccd</update_guid>
+        <update_guid_history>2f94a531545b2110c40e6fee91ad1ccd:0,4d093ed138572110b155851b3a710851:1707351159</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>3d20d9ac321e49a8bf3e007cbcfb7371</sys_id>
+        <sys_metadata>7684c7b697a011102f77b4b3f153af4e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Conclusion</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_7684c7b697a011102f77b4b3f153af4e">6394a531975b2110d70ef207f053afce</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

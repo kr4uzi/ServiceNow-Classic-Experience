@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
     <sys_app_application action="INSERT_OR_UPDATE">
         <active>true</active>
-        <category display_value="Administration">647e6524c0a80a080010856a87e15ce2</category>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
         <description/>
         <device_type>browser</device_type>
         <hint/>
         <name/>
         <order>100</order>
-        <roles>x_376096_cxp.ui_policy_button_action_user,x_376096_cxp.ui_action_style_user</roles>
+        <roles>content_admin,ui_action_admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 09:43:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>97f0485d97e491102f77b4b3f153afd2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Core Experience</sys_name>
         <sys_overrides/>
         <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_app_application_97f0485d97e491102f77b4b3f153afd2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-07 19:28:58</sys_updated_on>
+        <sys_updated_on>2023-06-08 19:22:16</sys_updated_on>
         <title>Core Experience</title>
         <view_name/>
     </sys_app_application>

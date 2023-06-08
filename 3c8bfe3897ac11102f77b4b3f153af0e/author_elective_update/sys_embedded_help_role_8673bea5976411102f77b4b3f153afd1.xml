@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="DELETE">
+        <order>1000</order>
+        <role display_value="x_376096_cxp.ui_action_style_user" name="x_376096_cxp.ui_action_style_user">ca7332a1976411102f77b4b3f153af88</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 17:20:37</sys_created_on>
+        <sys_id>8673bea5976411102f77b4b3f153afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ca7332a1976411102f77b4b3f153af88</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_8673bea5976411102f77b4b3f153afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 17:20:37</sys_updated_on>
+    </sys_embedded_help_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_embedded_help_role_8673bea5976411102f77b4b3f153afd1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_376096_cxp.ui_action_style_user" name="x_376096_cxp.ui_action_style_user">ca7332a1976411102f77b4b3f153af88</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 17:20:37</sys_created_on>
+        <sys_id>8673bea5976411102f77b4b3f153afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ca7332a1976411102f77b4b3f153af88</sys_name>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_8673bea5976411102f77b4b3f153afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 17:20:37</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>]]></payload>
+        <payload_hash>-1956354006</payload_hash>
+        <record_name>ca7332a1976411102f77b4b3f153af88</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:10</sys_created_on>
+        <sys_id>f409fad197572110d70ef207f053af57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3b1220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:10</sys_updated_on>
+        <type>Embedded Help Role Priority</type>
+        <update_guid>b409fad185572110c10512ef0aa91d57</update_guid>
+        <update_guid_history>b409fad185572110c10512ef0aa91d57:-1956354006</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:22:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_help_role">sys_embedded_help_role</sys_db_object>
+        <sys_id>0cb16be5f89a4d4682b262d8f5027204</sys_id>
+        <sys_metadata>8673bea5976411102f77b4b3f153afd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ca7332a1976411102f77b4b3f153af88</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_embedded_help_role_8673bea5976411102f77b4b3f153afd1</sys_update_name>
+        <sys_update_version display_value="sys_embedded_help_role_8673bea5976411102f77b4b3f153afd1">f409fad197572110d70ef207f053af57</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:22:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element">
+    <sys_embedded_tour_element action="DELETE">
+        <cell_edit/>
+        <cell_types/>
+        <col/>
+        <cxs_results/>
+        <element_type>button</element_type>
+        <field/>
+        <field_action/>
+        <field_header/>
+        <filters/>
+        <form_buttons>additional_actions</form_buttons>
+        <form_element>related_list</form_element>
+        <form_section/>
+        <frameset>nav_filter</frameset>
+        <list_element>ui_action</list_element>
+        <list_header/>
+        <manual_css/>
+        <name>x_376096_cxp_ui_action_style.form.relate</name>
+        <record_id/>
+        <related_field/>
+        <related_links/>
+        <related_list_element>ui_action</related_list_element>
+        <related_lists>sys_ui_action.x_376096_cxp_style</related_lists>
+        <related_table/>
+        <row/>
+        <sys_class_name>sys_embedded_tour_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 17:16:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85d8d732972411102f77b4b3f153afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_ui_action_style.form.relate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_element_85d8d732972411102f77b4b3f153afc5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 17:16:15</sys_updated_on>
+        <table>x_376096_cxp_ui_action_style</table>
+        <type>form</type>
+        <ui_action display_value="Edit...">7fff4c3d0a0a0b3400ad3f1a1d613f74</ui_action>
+    </sys_embedded_tour_element>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_embedded_tour_element_85d8d732972411102f77b4b3f153afc5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element">
+    <sys_embedded_tour_element action="INSERT_OR_UPDATE">
+        <cell_edit/>
+        <cell_types/>
+        <col/>
+        <cxs_results/>
+        <element_type>button</element_type>
+        <field/>
+        <field_action/>
+        <field_header/>
+        <filters/>
+        <form_buttons>additional_actions</form_buttons>
+        <form_element>related_list</form_element>
+        <form_section/>
+        <frameset>nav_filter</frameset>
+        <list_element>ui_action</list_element>
+        <list_header/>
+        <manual_css/>
+        <name>x_376096_cxp_ui_action_style.form.relate</name>
+        <record_id/>
+        <related_field/>
+        <related_links/>
+        <related_list_element>ui_action</related_list_element>
+        <related_lists>sys_ui_action.x_376096_cxp_style</related_lists>
+        <related_table/>
+        <row/>
+        <sys_class_name>sys_embedded_tour_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 17:16:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85d8d732972411102f77b4b3f153afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_ui_action_style.form.relate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_element_85d8d732972411102f77b4b3f153afc5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 17:16:15</sys_updated_on>
+        <table>x_376096_cxp_ui_action_style</table>
+        <type>form</type>
+        <ui_action display_value="Edit...">7fff4c3d0a0a0b3400ad3f1a1d613f74</ui_action>
+    </sys_embedded_tour_element>
+</record_update>]]></payload>
+        <payload_hash>-759569998</payload_hash>
+        <record_name>x_376096_cxp_ui_action_style.form.relate</record_name>
+        <reverted_from/>
+        <source>19f876d197572110d70ef207f053af7b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-07 12:10:10</sys_created_on>
+        <sys_id>b409fad197572110d70ef207f053af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18895c3b2ff0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-07 12:10:10</sys_updated_on>
+        <type>Guided Tour Element</type>
+        <update_guid>7409fad1ba572110682c8fee19b53091</update_guid>
+        <update_guid_history>7409fad1ba572110682c8fee19b53091:-759569998</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:19:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_element">sys_embedded_tour_element</sys_db_object>
+        <sys_id>23e20fc8f0e14f1d8805727bfd9ee8c1</sys_id>
+        <sys_metadata>85d8d732972411102f77b4b3f153afc5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_376096_cxp_ui_action_style.form.relate</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_element_85d8d732972411102f77b4b3f153afc5</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_element_85d8d732972411102f77b4b3f153afc5">b409fad197572110d70ef207f053af91</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:19:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

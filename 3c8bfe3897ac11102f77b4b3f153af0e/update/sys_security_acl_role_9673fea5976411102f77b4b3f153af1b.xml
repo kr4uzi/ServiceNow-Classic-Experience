@@ -4,16 +4,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-07 17:20:39</sys_created_on>
         <sys_id>9673fea5976411102f77b4b3f153af1b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_376096_cxp_ui_action_style.x_376096_cxp.ui_action_style_user</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_376096_cxp_ui_action_style.ui_action_admin</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_security_acl display_value="x_376096_cxp_ui_action_style">da73fea5976411102f77b4b3f153af0b</sys_security_acl>
         <sys_update_name>sys_security_acl_role_9673fea5976411102f77b4b3f153af1b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-07 17:20:39</sys_updated_on>
-        <sys_user_role display_value="x_376096_cxp.ui_action_style_user" name="x_376096_cxp.ui_action_style_user">ca7332a1976411102f77b4b3f153af88</sys_user_role>
+        <sys_updated_on>2023-06-08 16:32:29</sys_updated_on>
+        <sys_user_role display_value="ui_action_admin" name="ui_action_admin">724089490a0a0bac01cea948b9631b86</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

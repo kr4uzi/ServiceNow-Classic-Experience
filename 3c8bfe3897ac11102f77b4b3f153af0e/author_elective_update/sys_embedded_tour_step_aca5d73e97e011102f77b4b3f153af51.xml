@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>true</action>
+        <action_event>click</action_event>
+        <action_target/>
+        <action_target_ref/>
+        <active>true</active>
+        <content><![CDATA[In this Guided Tour, you will learn how to add the trash-icon to the Delete UI Actions.]]></content>
+        <guide/>
+        <implicit>false</implicit>
+        <link/>
+        <name>Introduction</name>
+        <options/>
+        <order>0</order>
+        <placement>bottom</placement>
+        <skippable>false</skippable>
+        <step_type>intro</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 17:02:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aca5d73e97e011102f77b4b3f153af51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Introduction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_aca5d73e97e011102f77b4b3f153af51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 17:02:17</sys_updated_on>
+        <target/>
+        <target_ref/>
+        <title><![CDATA[Tutorial: UI Action Delete Style]]></title>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window/>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=aca5d73e97e011102f77b4b3f153af51"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_embedded_tour_step_aca5d73e97e011102f77b4b3f153af51</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;true&lt;/action&gt;&lt;action_event&gt;click&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref/&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[In this Guided Tour, you will learn how to add the trash-icon to the Delete UI Actions.]]&gt;&lt;/content&gt;&lt;guide/&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name&gt;Introduction&lt;/name&gt;&lt;options/&gt;&lt;order&gt;0&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;intro&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-11 17:02:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;aca5d73e97e011102f77b4b3f153af51&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Introduction&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Core Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Core Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_aca5d73e97e011102f77b4b3f153af51&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-11 17:02:17&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref/&gt;&lt;title&gt;&lt;![CDATA[Tutorial: UI Action Delete Style]]&gt;&lt;/title&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window/&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=aca5d73e97e011102f77b4b3f153af51"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-639166892</payload_hash>
+        <record_name>Introduction</record_name>
+        <reverted_from/>
+        <source>83b52c65971f2110d70ef207f053aff3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:24</sys_created_on>
+        <sys_id>af94a531975b2110d70ef207f053af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1889c721ec60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:24</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>6b94a531e55b211068e810d33eae1993</update_guid>
+        <update_guid_history>6b94a531e55b211068e810d33eae1993:0,15093ed1205721103797be2c958e7996:-881923520</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>ee99edea1ef34fcca823265190c8f7c1</sys_id>
+        <sys_metadata>aca5d73e97e011102f77b4b3f153af51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Introduction</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_aca5d73e97e011102f77b4b3f153af51</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_aca5d73e97e011102f77b4b3f153af51">af94a531975b2110d70ef207f053af93</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

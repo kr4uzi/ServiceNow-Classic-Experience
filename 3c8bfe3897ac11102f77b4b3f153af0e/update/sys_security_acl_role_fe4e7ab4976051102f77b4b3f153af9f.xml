@@ -4,16 +4,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-05 10:12:28</sys_created_on>
         <sys_id>fe4e7ab4976051102f77b4b3f153af9f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_376096_cxp_ui_policy_button_action.x_376096_cxp.ui_policy_button_action_user</sys_name>
-        <sys_package display_value="Classic Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_376096_cxp_ui_policy_button_action.ui_policy_admin</sys_name>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Classic Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_security_acl display_value="x_376096_cxp_ui_policy_button_action">fa4e7ab4976051102f77b4b3f153af9c</sys_security_acl>
         <sys_update_name>sys_security_acl_role_fe4e7ab4976051102f77b4b3f153af9f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-05 10:12:28</sys_updated_on>
-        <sys_user_role display_value="x_376096_cxp.ui_policy_button_action_user" name="x_376096_cxp.ui_policy_button_action_user">e24e7ab4976051102f77b4b3f153af7d</sys_user_role>
+        <sys_updated_on>2023-06-08 16:31:35</sys_updated_on>
+        <sys_user_role display_value="ui_policy_admin" name="ui_policy_admin">724384020a0a0bac017448acd4342f99</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

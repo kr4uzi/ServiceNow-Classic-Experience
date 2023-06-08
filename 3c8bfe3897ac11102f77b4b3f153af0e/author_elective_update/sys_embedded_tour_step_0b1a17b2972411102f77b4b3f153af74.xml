@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="div.col-sm-offset-2.col-sm-8.m2m_filter_">cb1a17b2972411102f77b4b3f153af72</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<p><strong>Apply</strong> the following <strong>filter</strong>:<br />[Active] [is] [true] (AND)<br />[Form action] [is] [true] (AND)<br />[Table] [is] [global] (AND)<br />[Name] [is] [Delete]<br /><br />Then, click on &#39;<strong>Run filter</strong>&#39;.</p>]]></content>
+        <guide/>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"step_view":""}</options>
+        <order>5</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 17:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b1a17b2972411102f77b4b3f153af74</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_0b1a17b2972411102f77b4b3f153af74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 17:36:07</sys_updated_on>
+        <target/>
+        <target_ref display_value="div.col-sm-offset-2.col-sm-8.m2m_filter_">cb1a17b2972411102f77b4b3f153af72</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>sys_m2m_template.do</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=0b1a17b2972411102f77b4b3f153af74"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</application>
+        <file_path/>
+        <instance_id>071f9d4fdb9a159c3050ac44d496190e</instance_id>
+        <instance_name>dev139763</instance_name>
+        <name>sys_embedded_tour_step_0b1a17b2972411102f77b4b3f153af74</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="div.col-sm-offset-2.col-sm-8.m2m_filter_"&gt;cb1a17b2972411102f77b4b3f153af72&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Apply&lt;/strong&gt; the following &lt;strong&gt;filter&lt;/strong&gt;:&lt;br /&gt;[Active] [is] [true] (AND)&lt;br /&gt;[Form action] [is] [true] (AND)&lt;br /&gt;[Table] [is] [global] (AND)&lt;br /&gt;[Name] [is] [Delete]&lt;br /&gt;&lt;br /&gt;Then, click on &amp;#39;&lt;strong&gt;Run filter&lt;/strong&gt;&amp;#39;.&lt;/p&gt;]]&gt;&lt;/content&gt;&lt;guide/&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"step_view":""}&lt;/options&gt;&lt;order&gt;5&lt;/order&gt;&lt;placement&gt;top&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-11 17:21:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0b1a17b2972411102f77b4b3f153af74&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Core Experience" source="x_376096_cxp"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Core Experience"&gt;3c8bfe3897ac11102f77b4b3f153af0e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_0b1a17b2972411102f77b4b3f153af74&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-11 17:36:07&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="div.col-sm-offset-2.col-sm-8.m2m_filter_"&gt;cb1a17b2972411102f77b4b3f153af72&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;sys_m2m_template.do&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0b1a17b2972411102f77b4b3f153af74"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-140616117</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>83b52c65971f2110d70ef207f053aff3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:24</sys_created_on>
+        <sys_id>eb94a531975b2110d70ef207f053af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1889c721e760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:24</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>a794a5313e5b2110f555fbb19ab7da65</update_guid>
+        <update_guid_history>a794a5313e5b2110f555fbb19ab7da65:0,4509fad1ac5721102a598cc0a97be9eb:1053864563</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-08 19:18:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>210702b2934941709550a2bb2f957d04</sys_id>
+        <sys_metadata>0b1a17b2972411102f77b4b3f153af74</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
+        <sys_scope_delete display_value="">6c5dd96794e64e2cb14d54f62a4dc4e4</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_0b1a17b2972411102f77b4b3f153af74</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_0b1a17b2972411102f77b4b3f153af74">eb94a531975b2110d70ef207f053af65</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-08 19:18:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
