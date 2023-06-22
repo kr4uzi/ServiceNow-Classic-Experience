@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_376096_cxp_ui_action_style">
     <x_376096_cxp_ui_action_style action="INSERT_OR_UPDATE">
-        <action_names>resolve_incident,move_to_resolved,approve</action_names>
+        <action_names>resolve_incident,move_to_resolved,approve,state_model_move_to_scheduled</action_names>
         <active>true</active>
         <background_color/>
         <background_color_hover/>
@@ -10,14 +10,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-08 18:43:45</sys_created_on>
         <sys_id>726cd1b5971b2110d70ef207f053af7b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>CXP Checked</sys_name>
         <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>x_376096_cxp_ui_action_style_726cd1b5971b2110d70ef207f053af7b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-08 18:47:54</sys_updated_on>
+        <sys_updated_on>2023-06-22 17:18:11</sys_updated_on>
         <text_color/>
         <text_color_hover/>
     </x_376096_cxp_ui_action_style>
