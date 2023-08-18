@@ -26,7 +26,8 @@ x_376096_cxp.loader_desktop = (function() {
 		});
 	}
 	
-	createScript('x_376096_cxp.css_inject_desktop.jsdbx?v=1.0.0');
+	var version = '1.0.2';
+	createScript('x_376096_cxp.css_inject_desktop.jsdbx?v=' + version);
 	
 	return {
 		set: setResource,
@@ -66,14 +67,14 @@ x_376096_cxp.loader_desktop = (function() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-20 14:58:43</sys_created_on>
         <sys_id>56af89b5977c51102f77b4b3f153aff0</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_name>x_376096_cxp.loader_desktop</sys_name>
         <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>sys_ui_script_56af89b5977c51102f77b4b3f153aff0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-07 19:32:24</sys_updated_on>
+        <sys_updated_on>2023-08-18 19:47:50</sys_updated_on>
         <ui_type>0</ui_type>
         <use_scoped_format>true</use_scoped_format>
     </sys_ui_script>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_376096_cxp_ui_action_style">
     <x_376096_cxp_ui_action_style action="INSERT_OR_UPDATE">
-        <action_names>sysverb_delete,delete_table_complete,delete_all_records</action_names>
+        <action_names>sysverb_delete,sysverb_delete_custom,delete_table_complete,delete_all_records,drop_table_element</action_names>
         <active>true</active>
         <background_color/>
         <background_color_hover/>
@@ -10,14 +10,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-06-07 12:10:47</sys_created_on>
         <sys_id>0829361597572110d70ef207f053af08</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>CXP Trash</sys_name>
         <sys_package display_value="Core Experience" source="x_376096_cxp">3c8bfe3897ac11102f77b4b3f153af0e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Core Experience">3c8bfe3897ac11102f77b4b3f153af0e</sys_scope>
         <sys_update_name>x_376096_cxp_ui_action_style_0829361597572110d70ef207f053af08</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-06-22 16:17:31</sys_updated_on>
+        <sys_updated_on>2023-07-03 13:41:25</sys_updated_on>
         <text_color/>
         <text_color_hover/>
     </x_376096_cxp_ui_action_style>
